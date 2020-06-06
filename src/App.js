@@ -1,14 +1,13 @@
 import React from 'react';
-import {ImgCarousel} from './component/HomeComponent'
-import Footer from './component/FooterComponent'
+import Home from './component/HomeComponent'
 import './App.css';
 
 
 function App() {
   return (
     <div>
-      <ImgCarousel/> 
-      <Footer/>
+      <Home/>
+      
     </div>
   );
 }

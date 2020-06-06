@@ -2,41 +2,63 @@
   height: 100vh;
   width: 100%;
 }
-
-.navBar{
+.medlab{
   position: absolute;
   z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+.navBar{
+  position: absolute;
+  z-index: 2;
   top: 25%;
+  background-color: #2295bc;
+}
+.navShort{
   width: 90%;
   margin-left: 5%;
   margin-right:5%;
-  background-color: #2295bc;
   border-radius: 4px;
 }
+.navScreenSize{
+  background-color:#2295bc ;
+}
+
 .nav-link{
  margin-right: 25px;
 }
-
 #medlabLogo{
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 30px;
   left: 5%;
 }
 #medlabPhone{
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 8%; 
   right: 30%;
 }
 #medlabPhoneNo{
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 8%;
   right: 20%;
 }
 .footer{
-  background-color: #2088aa;
+  background-color:#2a93c9;;
   margin:0px auto;
   padding: 20px 0px 20px 0px;
+}
+
+.toggleLogo{
+  margin-left: 450px;
+}
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
 }
