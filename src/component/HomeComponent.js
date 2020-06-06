@@ -15,7 +15,7 @@ class Home extends Component{
     }
     
     handleScroll(){
-        console.log(window.scrollY);
+        //console.log(window.scrollY);
         this.setState({
             scroll:window.scrollY
         })
@@ -27,6 +27,7 @@ class Home extends Component{
    render(){
        return(
          <>
+         {console.log(window.screen.height)}
         <div className="medlab">
         <Media query="(min-width:1290px)"> 
             <div>
@@ -36,7 +37,7 @@ class Home extends Component{
               <a href="tel:+91123444" className="text-white">+91-8448773319</a><br/>
               <a href="tel:+9124444" className="text-white">+91-8448773319</a>
               </div>
-              <div className={`${this.state.scroll>150 ? 'fixed-top navScreenSize': 'navBar navShort'}`}>
+              <div className={`${this.state.scroll>(window.screen.height)/5? 'flash fixed-top navScreenSize ': 'navBar navShort'}`}>
                 <Header/>
               </div>
             </div>

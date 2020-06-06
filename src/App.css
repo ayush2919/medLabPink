@@ -26,6 +26,7 @@
 
 .nav-link{
  margin-right: 25px;
+ transition-delay:2s ;
 }
 #medlabLogo{
   position: absolute;
@@ -61,4 +62,44 @@
   font-size: 1rem;
   background-color: rgba(0, 0, 0, .25);
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.bounce {
+  animation: bounce 1s;
+  transform-origin: center bottom;
+}
+
+@keyframes flash {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.flash {
+  animation: flash 1s;
 }
