@@ -1,31 +1,3 @@
-// import React, { Component } from 'react';
-// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-// import { Carousel } from 'react-responsive-carousel';
- 
-// class DemoCarousel extends Component {
-//     render() {
-//         return (
-//             <Carousel>
-//                 <div>
-//                     <img src="../assets/images/alberto.png" />
-//                     <p className="legend">Legend 1</p>
-//                 </div>
-//                 <div>
-//                     <img src="../assets/images/buffet.png" />
-//                     <p className="legend">Legend 2</p>
-//                 </div>
-//                 <div>
-//                     <img src="../assets/images/buffet.png" />
-//                     <p className="legend">Legend 3</p>
-//                 </div>
-//             </Carousel>
-//         );
-//     }
-// }
-
-// export default DemoCarousel;
-
-
 import React, { useState } from 'react';
 import {
   Carousel,
