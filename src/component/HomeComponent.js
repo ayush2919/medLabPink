@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header from './HeaderComponent';
 import {
   Carousel,
   CarouselItem,
@@ -25,7 +26,7 @@ const items = [
   }
 ];
 
-const Example = (props) => {
+export const ImgCarousel = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -57,17 +58,22 @@ const Example = (props) => {
   });
 
   return (
-    <Carousel
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-    >
+    <>
+    <img src="../assets/images/logo.png" id="medlabLogo" alt="MedLab"/>
+    <img src="../assets/images/phone.png"  id="medlabPhone" alt="Contact-No."/>
+    <div id="medlabPhoneNo"> 
+     <a href="tel:+91123444" className="text-white">+91-8448773319</a><br/>
+     <a href="tel:+9124444" className="text-white">+91-8448773319</a>
+    </div>
+    <div className="navBar">
+      <Header/>
+    </div>
+   <Carousel activeIndex={activeIndex} next={next} previous={previous}>
       <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
       {slides}
       <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
+   </> 
   );
 }
-
-export default Example

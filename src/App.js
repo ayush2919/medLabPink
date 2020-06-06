@@ -1,12 +1,14 @@
 import React from 'react';
-import Example from './component/HomeComponent'
+import {ImgCarousel} from './component/HomeComponent'
+import Footer from './component/FooterComponent'
 import './App.css';
 
 
 function App() {
   return (
     <div>
-      <Example/> 
+      <ImgCarousel/> 
+      <Footer/>
     </div>
   );
 }
