@@ -104,9 +104,9 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
-  width: 36px;
-  height: 30px;
-  margin:20px 0px 20px 20px
+  width: 24px;
+  height: 20px;
+  margin:14px 12px 14px 12px 
 }
 
 /* Color/shape of burger icon bars */
@@ -128,9 +128,10 @@
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: #2a93c9 ;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -151,7 +152,56 @@
 /* small screen nav */
 .burgerNav{
   width: 100%;
-  height: 10%;
+  height: 50px;
+  position: fixed;
   background-color:#2a93c9 ;
 }
+.hamBurLogo{
+  position: absolute;
+  top: 0px;
+  left:45%;
+  margin:5px 0px ;
+  display: inline-block;  
+}
+.actBtn{
+  position: absolute;
+  top: 0px;
+  right:10px;
+  width:50px;
+  height: 50px;
+}
 
+@keyframes rotateIn {
+  from {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.rotateIn {
+  animation: rotateIn 1s;
+}
+
+@keyframes rotateOutDownLeft {
+  from {
+    transform-origin: left bottom;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+}
+
+.rotateOutDownLeft {
+  animation: rotateOutDownLeft 1s;
+}

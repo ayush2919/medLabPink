@@ -1,11 +1,15 @@
 import React from "react";
+import Media from 'react-media';
 import { stack as Menu } from "react-burger-menu";
 
 export default props => {
   return (
     <Menu {...props}>
+      <Media query='(max-width:414px)'>
+        <img src='../assets/images/logo.png' width="120px" hegith="70px"/>
+      </Media>  
       <a className="menu-item" href="/">
-        Home
+      <strong>Home</strong>
       </a>
 
       <a className="menu-item" href="/burgers">
