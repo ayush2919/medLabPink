@@ -8,7 +8,7 @@ class ToggleNavbar extends Component {
     constructor(props) {
         super(props);
         this.state={
-            width: '200px',
+            width: '250px',
             height: '150px',
             position:'absolute',
             right:'25px',
@@ -17,7 +17,7 @@ class ToggleNavbar extends Component {
             display:'none',
             boxShadow: '0 8px 16px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.4)'
         }        
-     this.openDiv=this.openDiv.bind(this)
+     this.handleDiv=this.handleDiv.bind(this)
     }
     
     componentDidMount(){
@@ -33,7 +33,7 @@ class ToggleNavbar extends Component {
         });
     }   
 
-    openDiv(box){
+    handleDiv(box){
     if(box.display=="none")    
       this.setState({
        ...box,display:'block'
@@ -56,11 +56,25 @@ class ToggleNavbar extends Component {
                 <img src="../assets/images/logo.png" width="80px" height="40px"/>
                 </div> 
                 </Media>
-                <div className="actBtn" onClick={()=>this.openDiv(this.state)}> 
+                <div className="actBtn" onClick={()=>this.handleDiv(this.state)}> 
                 <i id="fontAwesome" className={`${this.state.display=='block' ? 'fa fa-close fa-lg rotateIn' :'fa fa-ellipsis-v fa-2x flash'}`} 
                 aria-hidden="true" type="button" style={{margin:'10px 20px',color:'white'}}/>
                 </div>
                 <div style={this.state} id="box">
+                    <div className="socialMediaIcons actBox">
+                    <div>  
+                     <a href="#">
+                     <i className="fa fa-lg fa-phone"/>
+                     <span className="text-white ml-2 small">8448773119</span>
+                     </a>
+                     </div>
+                     <div>
+                      <a href="#">
+                        <i className="fa fa-lg fa-map-marker"/>
+                        <span className="text-white ml-2 small">147A,Twin tower Bihar</span>
+                      </a>
+                     </div>
+                </div>    
                 </div>
             </div> 
            </>       
