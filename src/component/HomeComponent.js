@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Media from 'react-media'
+import {LifeCycle} from './LifeCyclePackage'
 import { ImgCarousel } from './Carousel';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent'
@@ -47,6 +48,7 @@ class Home extends Component{
             </Media>
          </div> 
          <ImgCarousel/> 
+         <LifeCycle/>
          <Footer/>
          </>
        )

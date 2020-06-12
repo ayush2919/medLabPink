@@ -204,6 +204,12 @@
   animation: rotateOutDownLeft 1s;
 }
 
+/* Packages */
+.cardStyling{
+ 
+ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
+}
+
 /* footer */
 .footer{
   background-color:#2a93c9;
