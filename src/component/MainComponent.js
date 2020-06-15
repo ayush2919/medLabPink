@@ -53,7 +53,7 @@ class Main extends Component{
             </Media>
          </div> 
          <Switch>
-             <Route exact path='/home' component={()=><Home/>}/>
+             <Route exact path='/' component={()=><Home/>}/>
              <Route path='/home/lifestyle/1'/>
          </Switch>
          <Footer/>
