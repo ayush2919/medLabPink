@@ -8,7 +8,7 @@ export default props => {
       <Media query='(max-width:414px)'>
         <img src='../assets/images/logo.png' width="120px" hegith="70px"/>
       </Media>  
-      <a className="menu-item" href="/">
+      <a className="menu-item" href="/home">
       <strong>Home</strong>
       </a>
 

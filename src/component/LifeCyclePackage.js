@@ -1,8 +1,58 @@
 import React, { Component } from "react";
 import Media from 'react-media';
+import {CardImg} from 'reactstrap';
+import { Link } from 'react-router-dom';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+
+const items=[
+      {
+        id:1,
+        img:'../assets/lifecycle/liver.png',
+        name:'Liver'
+      },
+      {
+        id:2,
+        img:'../assets/lifecycle/vitaminD.png',
+        name:'VitaminD'
+      },
+      {
+        id:3,
+        img:'../assets/lifecycle/kidney.png',
+        name:'Kidney'
+      },
+      {
+        id:4,
+        img:'../assets/lifecycle/lungs.png',
+        name:'Lungs'
+      },
+      {
+        id:5,
+        img:'../assets/lifecycle/infertility.png',
+        name:'Infertility'
+      },
+      {
+        id:6,
+        img:'../assets/lifecycle/cbc.png',
+        name:'CBC'
+      },
+      {
+        id:7,
+        img:'../assets/lifecycle/heart.png',
+        name:'Heart'
+      },
+      {
+        id:8,
+        img:'../assets/lifecycle/thyroid.png',
+        name:'Thyroid'
+      },
+      {
+        id:9,
+        img:'../assets/lifecycle/allergy.png',
+        name:'Allergy'
+      }
+];
 
 class Slick extends Component{
   render(){
@@ -19,33 +69,16 @@ class Slick extends Component{
         <h4 className="mt-5">LifeCylce Disorder</h4>
         <div className="lifeCylce">
         <Slider {...settings}>
-          <div className="cardStyling">
-           <a href="#"><img src="../assets/lifecycle/liver.png"/></a>
-          </div>
-          <div className="cardStyling">
-          <a href="#"><img src="../assets/lifecycle/vitaminD.png"/></a>
-          </div>
-          <div className="cardStyling">
-          <a href="#"><img src="../assets/lifecycle/kidney.png"/></a>
-          </div>
-          <div className="cardStyling">
-          <a href="#"><img src="../assets/lifecycle/lungs.png"/></a>
-          </div>
-          <div className="cardStyling">
-          <a href="#"><img src="../assets/lifecycle/infertility.png"/></a>
-          </div>
-          <div className="cardStyling">
-          <a href="#"><img src="../assets/lifecycle/cbc.png"/></a>
-          </div>
-          <div className="cardStyling">
-          <a href="#"><img src="../assets/lifecycle/heart.png"/></a>
-          </div>
-          <div className="cardStyling">
-          <a href="#"><img src="../assets/lifecycle/thyroid.png"/></a>
-          </div>
-          <div className="cardStyling">
-          <a href="#"><img src="../assets/lifecycle/allergy.png"/></a>
-          </div>
+         {
+            items.map(item=>{
+             return( 
+              <div className="cardStyling m-3">
+              <Link to={`/home/lifestyle/${item.id}`}>
+              <img src={item.img} alt={item.name}/>
+             </Link>
+            </div>
+             )})   
+         }
         </Slider>
         </div>  
       </div>
@@ -53,6 +86,30 @@ class Slick extends Component{
   }
 }
 
+class ShowAtOnce extends Component{
+  render(){
+    return(
+      <>
+       <div className="container">
+       <h5 className="mt-5">LifeCylce Disorder</h5>
+         <div className="row">
+            {
+              items.map(item=>{
+                return(
+                  <div className="col-4 cardStyling mt-2">
+                   <Link to={`/home/lifestyle/${item.id}`}>
+                   <CardImg src={item.img} alt={item.name}/>
+                   </Link>
+                  </div>
+                  
+                )
+               })
+            }
+          </div> 
+       </div>
+      </>
+    )}
+}
 
 export default class LifeCylce extends Component {
   
@@ -63,7 +120,7 @@ export default class LifeCylce extends Component {
     <Slick/>
    </Media>
    <Media query="(max-width:767px)">
-   <h3>ayush</h3>
+   <ShowAtOnce/>
    </Media>  
    </>
    );}
