@@ -205,10 +205,20 @@
 }
 
 /* Packages */
-.cardStyling{
- 
+.lifeCylce{
+  margin: 50px 10px;
+}
+.cardStyling img{
+ border-radius: 5px;
+ margin: 10px 10px;
  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
 }
+.cardStyling :hover img{
+  transition: all 0.4s linear;
+  transform: scale(1.1);
+  border:1px solid #2a93c9;
+  
+ }
 
 /* footer */
 .footer{

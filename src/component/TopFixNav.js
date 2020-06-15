@@ -1,10 +1,10 @@
 import React,{Component} from 'react';
 import $ from 'jquery';
 import Media from 'react-media';
-import SideBar from "./slideBar";
+import HamBurger from "./HamBurgerMenu";
 
 
-class ToggleNavbar extends Component {
+class TopFixNav extends Component {
     constructor(props) {
         super(props);
         this.state={
@@ -49,7 +49,7 @@ class ToggleNavbar extends Component {
             <>    
             <div className="burgerNav">
                 <div style={{width:"50px" ,height:"50px"}}>
-                  <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
+                  <HamBurger pageWrapId={"page-wrap"} outerContainerId={"App"} />
                 </div>
                 <Media query='(min-width:415px)'>
                 <div className="hamBurLogo">
@@ -83,4 +83,4 @@ class ToggleNavbar extends Component {
     }
 }
 
-export default ToggleNavbar ;
+export default TopFixNav ;

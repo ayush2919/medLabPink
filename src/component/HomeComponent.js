@@ -1,10 +1,10 @@
 import React,{Component} from 'react';
 import Media from 'react-media'
-import {LifeCycle} from './LifeCyclePackage'
+import LifeCycle from './LifeCyclePackage'
 import { ImgCarousel } from './Carousel';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent'
-import ToggleNavbar from './ToggleNav';
+import TopFixNav from './TopFixNav';
 
 class Home extends Component{
     constructor(props){
@@ -44,7 +44,7 @@ class Home extends Component{
             </div>
             </Media>
             <Media query="(max-width:1289px)">
-              <ToggleNavbar/>
+              <TopFixNav/>
             </Media>
          </div> 
          <ImgCarousel/> 
