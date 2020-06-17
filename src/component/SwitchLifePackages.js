@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import RenderPackages from './RenderPackges';
 import LiverPackages from './LifePackages'
-import {items} from './LifeDisorder';
+
 
 export default class SelectDisorder extends Component{
     

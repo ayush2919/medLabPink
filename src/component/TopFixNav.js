@@ -34,7 +34,7 @@ class TopFixNav extends Component {
     }   
 
     handleDiv(box){
-    if(box.display=="none")    
+    if(box.display==="none")    
       this.setState({
        ...box,display:'block'
       })
@@ -53,11 +53,11 @@ class TopFixNav extends Component {
                 </div>
                 <Media query='(min-width:415px)'>
                 <div className="hamBurLogo">
-                <img src="../assets/images/logo.png" width="80px" height="40px"/>
+                <img src="../assets/images/logo.png" alt="MedLab" width="80px" height="40px"/>
                 </div> 
                 </Media>
                 <div className="actBtn" onClick={()=>this.handleDiv(this.state)}> 
-                <i id="fontAwesome" className={`${this.state.display=='block' ? 'fa fa-close fa-lg rotateIn' :'fa fa-ellipsis-v fa-2x flash'}`} 
+                <i id="fontAwesome" className={`${this.state.display==='block' ? 'fa fa-close fa-lg rotateIn' :'fa fa-ellipsis-v fa-2x flash'}`} 
                 aria-hidden="true" type="button" style={{margin:'10px 20px',color:'white'}}/>
                 </div>
                 <div style={this.state} id="box">
