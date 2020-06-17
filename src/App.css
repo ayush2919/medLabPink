@@ -3,6 +3,12 @@
   height: 100vh;
   width: 100%;
 }
+@media only screen and (max-width: 767px) {
+  .carousel img{
+    height: 50vh;
+    width: 100%;
+}
+}
 .medlab{
   position: absolute;
   z-index: 1;
@@ -160,7 +166,7 @@
 
 /* Packages */
 .lifeCylce{
-  margin: 50px 10px;
+  margin: 20px 0px;
 }
 .cardStyling img{ 
  border-radius: 5px;
@@ -173,12 +179,15 @@
 }
 .packages{
   border-radius: 5px;
-  height: 200px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.2);
 }
 .packagesBody{
-  position: absolute;
-  top: 100px;
+  line-height: 1em;
+}
+@media only screen and (max-width: 767px) {
+.outerPackages{
+ margin:10px 12%;
+}
 }
 /* footer */
 .footer{

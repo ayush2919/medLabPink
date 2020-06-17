@@ -3,8 +3,8 @@ import Header from './HeaderComponent';
 import Footer from './FooterComponent'
 import Home from './HomeComponent'
 import RenderPackages from './RenderPackges';
-
-import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import SwitchDisorder from './SwitchLifePackages';
+import { Switch, Route, Redirect} from 'react-router-dom';
 
 class Main extends Component{
     
@@ -21,7 +21,7 @@ class Main extends Component{
          <Header/>
          <Switch>
              <Route exact path='/' component={()=><Home/>}/>
-             <Route path='/lifestyle/:itemId' component={()=><RenderPackages/>}/>
+             <Route path='/lifestyle/:itemId' component={SwitchDisorder}/>
              <Redirect to="/" />
          </Switch>
          <Footer/>

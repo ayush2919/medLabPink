@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import BackImg from './BackImage';
 import { Card, CardText, CardBody,CardHeader,CardTitle,CardFooter ,Button,Modal, ModalHeader, ModalBody} from 'reactstrap';
-import LiverPackages from './LifePackages';  
-
-
-
+  
 export default class RenderPackages extends Component{
 
     constructor(props) {
@@ -12,9 +9,10 @@ export default class RenderPackages extends Component{
         
         this.state = {
             isModalOpen: false,
-            obj:null
+            obj:null,
+            maxLen:18
         };
-
+        //  console.log(props);
         this.toggleModal = this.toggleModal.bind(this);
         this.handleInfo = this.handleInfo.bind(this);
       }
@@ -26,10 +24,10 @@ export default class RenderPackages extends Component{
       }
     handleInfo=(itemId)=>()=>{  
         this.toggleModal()
-        var selectItem;
-        selectItem=LiverPackages.filter((item)=>item.id===itemId)[0]
+        var selectCard;
+        selectCard=this.props.cards.filter((item)=>item.id===itemId)[0]
         this.setState({
-                obj:selectItem
+                obj:selectCard
             })
     } 
     render(){
@@ -59,17 +57,18 @@ export default class RenderPackages extends Component{
           
    return(
        <>
+       {/* {console.log(`${this.props.name.length}`)} */}
        <BackImg/>
        <div className="container">   
        <div className="mt-5 mb-5">  
-        <h4>Liver Packages/Test</h4><hr/> 
+        <h4>{this.props.name}</h4><hr/> 
         <div className="row">{
-            LiverPackages.map(item=>{
+            this.props.cards.map(item=>{
                 return(
                     <>
-                    <div className="col-sm-12 col-md-3">     
+                    <div className="col-9 col-md-3 outerPackages">     
                     <Card className="packages">
-                    <CardHeader>{item.title}</CardHeader>      
+                    <CardHeader>{`${(item.title.length>this.state.maxLen)?item.title.substring(0, this.state.maxLen).concat('...'):item.title}`}</CardHeader>
                    <CardBody>
                    <div className="packagesBody">   
                      <CardText>
