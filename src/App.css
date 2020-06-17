@@ -1,3 +1,4 @@
+/* Header */
 .carousel img{
   height: 100vh;
   width: 100%;
@@ -58,26 +59,13 @@
   background-color: rgba(0, 0, 0, .25);
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
 }
-
-@keyframes flash {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+.backImg img{
+  width: 100%;
+  height: 70vh;
 }
 
-.flash {
-  animation: flash 1s;
-}
 
 /* burgerMenu */
-
-
-/* Individual item */
-
 .bm-item {
   display: inline-block;
 
@@ -169,56 +157,29 @@
   margin: 20px;
 }
 
-@keyframes rotateIn {
-  from {
-    transform-origin: center;
-    transform: rotate3d(0, 0, 1, -200deg);
-    opacity: 0;
-  }
-
-  to {
-    transform-origin: center;
-    transform: none;
-    opacity: 1;
-  }
-}
-
-.rotateIn {
-  animation: rotateIn 1s;
-}
-
-@keyframes rotateOutDownLeft {
-  from {
-    transform-origin: left bottom;
-    opacity: 1;
-  }
-
-  to {
-    transform-origin: left bottom;
-    transform: rotate3d(0, 0, 1, 45deg);
-    opacity: 0;
-  }
-}
-
-.rotateOutDownLeft {
-  animation: rotateOutDownLeft 1s;
-}
 
 /* Packages */
 .lifeCylce{
   margin: 50px 10px;
 }
-.cardStyling img{
+.cardStyling img{ 
  border-radius: 5px;
- box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
+ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.2);
 }
-.cardStyling :hover img{
+.cardStyling :hover {
   transition: all 0.4s linear;
   transform: scale(1.1);
   border:1px solid #2a93c9;
-  
- }
-
+}
+.packages{
+  border-radius: 5px;
+  height: 200px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.2);
+}
+.packagesBody{
+  position: absolute;
+  top: 100px;
+}
 /* footer */
 .footer{
   background-color:#2a93c9;

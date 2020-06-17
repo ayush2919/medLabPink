@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Media from 'react-media';
-import {CardImg} from 'reactstrap';
+import { Card, CardImg} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -73,7 +73,7 @@ class Slick extends Component{
             items.map(item=>{
              return( 
               <div className="cardStyling m-3">
-              <Link to={`/home/lifestyle/${item.id}`}>
+              <Link to={`/lifestyle/${item.id}`}>
               <img src={item.img} alt={item.name}/>
              </Link>
             </div>
@@ -98,7 +98,9 @@ class ShowAtOnce extends Component{
                 return(
                   <div className="col-4 cardStyling mt-2">
                    <Link to={`/home/lifestyle/${item.id}`}>
+                   <Card>  
                    <CardImg src={item.img} alt={item.name}/>
+                   </Card>
                    </Link>
                   </div>
                   
@@ -125,3 +127,4 @@ export default class LifeCylce extends Component {
    </>
    );}
 }
+
