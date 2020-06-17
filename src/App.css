@@ -3,17 +3,24 @@
   height: 100vh;
   width: 100%;
 }
+.medlab{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+@media only screen and (min-width:768px){
+.medlab{
+  height: 100vh;
+}
+}
 @media only screen and (max-width: 767px) {
-  .carousel img{
+.carousel img{
     height: 50vh;
     width: 100%;
 }
+.madlab{
+  height: 50vh;
 }
-.medlab{
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100vh;
 }
 .navBar{
   position: absolute;

@@ -2,12 +2,10 @@ import React, { Component } from "react";
 import Media from 'react-media';
 import { Card, CardImg} from 'reactstrap';
 import { Link } from 'react-router-dom';
-import {items} from './LifeDisorder'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
-
+import {items} from './LifeDisorder';
 
 class Slick extends Component{
   render(){
@@ -15,13 +13,13 @@ class Slick extends Component{
       dots: true,
       infinite: true,
       autoplay: true,
-      speed: 1500,
+      speed: 3000,
       slidesToShow: 5,
-      slidesToScroll: 1
+      slidesToScroll: 2
     };
     return (
       <div className="container">
-        <h4 className="mt-5">LifeCylce Disorder</h4><hr/>
+        <h4 className="mt-5">LifeCylce Disorder</h4>
         <div className="lifeCylce">
         <Slider {...settings}>
          {
@@ -46,13 +44,13 @@ class ShowAtOnce extends Component{
     return(
       <>
        <div className="container">
-       <h5 className="mt-5">LifeCylce Disorder</h5><hr/>
+       <h5 className="mt-5">LifeCylce Disorder</h5>
          <div className="row">
             {
               items.map(item=>{
                 return(
                   <div className="col-4 cardStyling mt-2">
-                   <Link to={`/home/lifestyle/${item.id}`}>
+                   <Link to={`/lifestyle/${item.id}`}>
                    <Card>  
                    <CardImg src={item.img} alt={item.name}/>
                    </Card>
@@ -73,10 +71,10 @@ export default class LifeCylce extends Component {
   render(){
    return(
    <>  
-    <Media query="(min-width:1024px)">
+    <Media query="(min-width:768px)">
     <Slick/>
    </Media>
-   <Media query="(max-width:768px)">
+   <Media query="(max-width:767px)">
    <ShowAtOnce/>
    </Media>  
    </>
