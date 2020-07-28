@@ -38,6 +38,8 @@ export default class RenderPackages extends Component{
         <div className="text-center">
         <ModalHeader toggle={this.toggleModal}>Details</ModalHeader>
           <ModalBody>
+          <h6 style={{color:"red"}}>Title</h6>
+          <p className="small">{this.state.obj.title}</p>  
           <h6 style={{color:"red"}}>Product Constituents</h6>
           <p className="small">{this.state.obj.ProductConstituents}</p>
           <h6 style={{color:"red"}}>Category</h6>
@@ -46,8 +48,10 @@ export default class RenderPackages extends Component{
           <p className="small">{this.state.obj.Prerequisite}</p>
           <h6 style={{color:"red"}}>Report Availability</h6>
           <p className="small">{this.state.obj.ReportAvailability}</p>
-          <h6 style={{color:"red"}}>Info</h6>
-          <p className="small">{this.state.obj.Info}</p>
+          <h6 style={{color:"red"}}>UsefulFor</h6>
+          <p className="small">{this.state.obj.UsefulFor}</p>
+          <h6 style={{color:"red"}}>SampleRequired</h6>
+          <p className="small">{this.state.obj.SampleRequired}</p>
           </ModalBody>   
         </div>    
       </Modal> 
@@ -66,7 +70,7 @@ export default class RenderPackages extends Component{
             this.props.cards.map(item=>{
                 return(
                     <>
-                    <div className="col-9 col-md-3 outerPackages">     
+                    <div className="col-9 col-md-3 outerPackages mt-5">     
                     <Card className="packages">
                     <CardHeader>{`${(item.title.length>this.state.maxLen)?item.title.substring(0, this.state.maxLen).concat('...'):item.title}`}</CardHeader>
                    <CardBody>

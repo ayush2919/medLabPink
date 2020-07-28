@@ -19,7 +19,7 @@ class Slick extends Component{
     };
     return (
       <div className="container">
-        <h4 className="mt-5">LifeCylce Disorder</h4>
+        <h4 className="mt-5">LifeCylce Disorder</h4><hr/>
         <div className="lifeCylce">
         <Slider {...settings}>
          {
@@ -44,7 +44,7 @@ class ShowAtOnce extends Component{
     return(
       <>
        <div className="container">
-       <h5 className="mt-5">LifeCylce Disorder</h5>
+       <h5 className="mt-5">LifeCylce Disorder</h5><hr/>
          <div className="row">
             {
               items.map(item=>{
