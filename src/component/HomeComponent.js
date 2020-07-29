@@ -11,7 +11,7 @@ class Home extends Component{
          <>
          {console.log(window.screen.height)}
          <ImgCarousel/> 
-         {/* <ComboPackages/> */}
+         <ComboPackages/>
          <LifeCycle/>
          </>
        )

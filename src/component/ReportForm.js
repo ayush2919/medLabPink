@@ -10,7 +10,7 @@ class ReportForm extends Component {
     <>
     <div className="">
     <h5 className="mt-5">Form</h5><hr/> 
-     <div className="formDiv m-4">     
+     <div className="formDiv">     
      </div>
     </div>   
     </>

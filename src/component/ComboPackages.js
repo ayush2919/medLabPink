@@ -16,6 +16,7 @@ export default class ComboPackages extends Component {
         <div className="row">  
         <div className="col-md-6 col-sm-10">  
         <h5 className="mt-5">ComboPackages</h5><hr/>
+        <div className="m-3">
         <Slider {...settings}>
           <div>
             <h3>1</h3>
@@ -27,6 +28,7 @@ export default class ComboPackages extends Component {
             <h3>3</h3>
           </div>
         </Slider>
+      </div>
       </div>
       <div className="col-md-6 col-sm-10">
       <ReportForm/>
