@@ -43,7 +43,7 @@ class ShowAtOnce extends Component{
   render(){
     return(
       <>
-       <div className="container">
+       <div className="container" style={{paddingTop:"80px"}}>
        <h5 className="mt-5">LifeCylce Disorder</h5><hr/>
          <div className="row">
             {
