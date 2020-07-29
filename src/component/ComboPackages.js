@@ -14,8 +14,8 @@ export default class ComboPackages extends Component {
     return (
       <div className="container" style={{paddingTop:'80px'}}>
         <div className="row">  
-        <div className="col-md-6 col-sm-12">  
-        <h3 className="mt-5">ComboPackages</h3><hr/>
+        <div className="col-md-6 col-sm-10">  
+        <h5 className="mt-5">ComboPackages</h5><hr/>
         <Slider {...settings}>
           <div>
             <h3>1</h3>
@@ -28,7 +28,7 @@ export default class ComboPackages extends Component {
           </div>
         </Slider>
       </div>
-      <div className="col-md-6 col-sm-12">
+      <div className="col-md-6 col-sm-10">
       <ReportForm/>
       </div>  
       </div>

@@ -9,7 +9,7 @@ class ReportForm extends Component {
    return(
     <>
     <div className="">
-    <h3 className="mt-5">Form</h3><hr/> 
+    <h5 className="mt-5">Form</h5><hr/> 
      <div className="formDiv m-4">     
      </div>
     </div>   
