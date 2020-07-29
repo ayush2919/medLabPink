@@ -7,7 +7,7 @@ export const items=[
     {
       id:2,
       img:'../assets/lifecycle/vitaminD.png',
-      name:'VitaminD'
+      name:'Diabetes'
     },
     {
       id:3,

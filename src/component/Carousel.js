@@ -41,7 +41,7 @@ export const ImgCarousel = (props) => {
     if (animating) return;
     setActiveIndex(newIndex);
   }
-
+  
   const slides = items.map((item) => {
     return (
       <CarouselItem onExiting={() => setAnimating(true)} onExited={() => setAnimating(false)}
@@ -53,9 +53,11 @@ export const ImgCarousel = (props) => {
   });
 
   return (
+    <div className="carouselDiv"> 
    <Carousel activeIndex={activeIndex} next={next} previous={previous}>
-      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+   <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
       {slides}
     </Carousel>
+    </div> 
   );
 }
