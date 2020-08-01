@@ -32,28 +32,28 @@ class NavBar extends Component {
                          <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar >
                             <NavItem>
-                                <NavLink className="nav-link font-weight-bold ml-4"  to='/'>HOME</NavLink>
+                                <NavLink className="nav-link font-weight-bold ml-4 active"  to='/'>HOME</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link font-weight-bold" to='/aboutus'>ABOUT US</NavLink>
+                                <NavLink className="nav-link font-weight-bold active" to='/about'>ABOUT US</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link font-weight-bold" to='/aboutus'>TEAM</NavLink>
+                                <NavLink className="nav-link font-weight-bold active" to='/aboutus'>TEAM</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link font-weight-bold" to='/aboutus'>TIMETABLE</NavLink>
+                                <NavLink className="nav-link font-weight-bold active" to='/aboutus'>TIMETABLE</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link font-weight-bold" to='/aboutus'>PACKAGES</NavLink>
+                            <a className="nav-link font-weight-bold active" href="../#packages">PACKAGES</a>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link font-weight-bold" to='/aboutus'>BUY PACKAGES</NavLink>
+                                <NavLink className="nav-link font-weight-bold active" to='/aboutus'>BUY PACKAGES</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link font-weight-bold" to="/aboutus">LifeCycle Disorder</NavLink>
+                            <a className="nav-link font-weight-bold active" href="../#lifecycle">LIFECYCLE DISORDER</a>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link font-weight-bold" to='/contactus'>CONTACT US</NavLink>
+                            <a className="nav-link font-weight-bold active" href="#contact">CONTACT US</a>
                             </NavItem>
                             </Nav>
                         </Collapse>

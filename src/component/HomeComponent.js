@@ -13,7 +13,9 @@ class Home extends Component{
          <ImgCarousel/> 
          <WhatMakes/>
          <ComboPackages/>
+         <div id="lifecycle">
          <LifeCycle/>
+         </div>
          </>
        )
    }

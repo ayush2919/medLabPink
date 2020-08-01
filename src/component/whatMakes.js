@@ -3,7 +3,7 @@ import React from 'react';
 
 const WhatMakes = ()=>{
 return(
-    <div className="container mt-5">
+    <div className="container properPadding">
      <h3 className="text-center">What Makes us Different</h3>   
      <div className="row mt-5">
         <div className="col-md-4 col-12">

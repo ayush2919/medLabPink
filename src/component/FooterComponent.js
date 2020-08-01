@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer(props) {
     return(
-    <div className="footer">
+    <div id="contact" className="footer mt-5">
         <div className="container">
             <div className="row justify-content-center">             
                 <div className="col-12  col-sm-4 text-white">

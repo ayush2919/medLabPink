@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Card, CardText, CardBody,CardHeader,
-     CardTitle,CardFooter ,Button,Modal, ModalHeader, ModalBody} from 'reactstrap';
+import { Card,CardBody,CardHeader,Button} from 'reactstrap';
 
 class ReportForm extends Component {
     constructor(props) {

@@ -12,7 +12,8 @@ export default class ComboPackages extends Component {
       slidesToScroll: 1
     };
     return (
-      <div className="container" style={{paddingTop:'80px'}}>
+      <div id="packages" className="container properPadding" >
+        <h3>Packages/Report</h3><hr/>
         <div className="row">  
         <div className="col-md-6 col-sm-10 mt-4">
           <ReportForm/>
