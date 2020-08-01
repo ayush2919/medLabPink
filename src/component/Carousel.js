@@ -47,7 +47,7 @@ export const ImgCarousel = (props) => {
       <CarouselItem onExiting={() => setAnimating(true)} onExited={() => setAnimating(false)}
         className="carousel" key={item.src} >  
         <img src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+        {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
       </CarouselItem>
     );
   });

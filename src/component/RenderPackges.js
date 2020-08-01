@@ -40,8 +40,6 @@ export default class RenderPackages extends Component{
           <ModalBody>
           <h6 style={{color:"red"}}>Title</h6>
           <p className="small">{this.state.obj.title}</p>  
-          <h6 style={{color:"red"}}>Product Constituents</h6>
-          <p className="small">{this.state.obj.ProductConstituents}</p>
           <h6 style={{color:"red"}}>Category</h6>
           <p className="small">{this.state.obj.Category}</p>
           <h6 style={{color:"red"}}>Prerequisite</h6>

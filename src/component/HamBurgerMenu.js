@@ -5,31 +5,29 @@ import { slide as Menu } from "react-burger-menu";
 export default props => {
   return (
     <Menu {...props}>
-      <Media query='(max-width:414px)'>
-        <img src='../assets/images/logo.png' width="120px" hegith="70px"/>
-      </Media>  
-      <a className="menu-item font-weight-bold" href="/">
+        <img className="homeLogo" src='../assets/images/medLogo.png' alt="MEDLOGO"/>
+      <a className="menu-item font-weight-bold" style={{paddingTop:"120px",color:"#2a93c9"}} href="/">
       Home
       </a>
-      <a className="menu-item font-weight-bold" href="/about">
+      <a className="menu-item font-weight-bold" style={{color:"#2a93c9"}} href="/about">
       ABOUT US
       </a>
-      <a className="menu-item font-weight-bold " href="#">
+      <a className="menu-item font-weight-bold " style={{color:"#2a93c9"}} href="#">
       TEAM
       </a>
-      <a className="menu-item font-weight-bold" href="#">
+      <a className="menu-item font-weight-bold" style={{color:"#2a93c9"}} href="#">
       TIMETABLE
       </a>
-      <a className="menu-item font-weight-bold" href="../#packages">
+      <a className="menu-item font-weight-bold" style={{color:"#2a93c9"}} href="../#packages">
       PACKAGES
       </a>
-      <a className="menu-item font-weight-bold" href="/desserts">
+      <a className="menu-item font-weight-bold" style={{color:"#2a93c9"}} href="/desserts">
       BUY PACKAGES
       </a>
-      <a className="menu-item font-weight-bold" href="../#lifecycle">
+      <a className="menu-item font-weight-bold" style={{color:"#2a93c9"}} href="../#lifecycle">
       LIFECYCLE DISORDER
       </a>
-      <a className="menu-item font-weight-bold" href="#contact">
+      <a className="menu-item font-weight-bold" style={{color:"#2a93c9"}} href="#contact">
       CONTACT US
       </a>
     </Menu>

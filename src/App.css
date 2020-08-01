@@ -54,22 +54,37 @@
  margin-right: 25px;
  transition-delay:2s ;
 }
-#medlabLogo{
+/* #medlabLogo{
   position: absolute;
   z-index: 2;
   top: 30px;
   left: 5%;
+} */
+.homeLogo{
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.8); */
 }
-#medlabPhone{
+.medlabPhone i{
   position: absolute;
   z-index: 2;
-  top: 8%; 
+  top: 10%; 
   right: 30%;
+  color: white;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #2a93c9 ;
+  border-radius: 30px;
+  text-align: center;
 }
 #medlabPhoneNo{
   position: absolute;
   z-index: 2;
-  top: 8%;
+  top: 11%;
   right: 20%;
 }
 .toggleLogo{
@@ -134,7 +149,7 @@
 
 /* General sidebar styles */
 .bm-menu {
-  background: #2a93c9 ;
+  background: white;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
   
@@ -162,13 +177,13 @@
   position: fixed;
   background-color:#2a93c9 ;
 }
-.hamBurLogo{
+/* .hamBurLogo{
   position: absolute;
   top: 0px;
   left:45%;
   margin:5px 0px ;
   display: inline-block;  
-}
+} */
 .actBtn{
   position: absolute;
   top: 0px;
@@ -244,12 +259,12 @@
   margin:0px auto;
   padding: 20px 0px 20px 0px;
 }
-.line{
+/* .line{
   width: 70%;
   height: 1px;
   background-color: white;
   margin-bottom:15px ;
-}
+} */
 .socialMediaIcons i{
  height:40px;
  width: 40px;
@@ -286,5 +301,5 @@
 }
 
 .properPadding{
-  padding-top: 150px;
+  padding-top: 130px;
 }

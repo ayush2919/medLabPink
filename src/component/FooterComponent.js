@@ -6,18 +6,20 @@ function Footer(props) {
         <div className="container">
             <div className="row justify-content-center">             
                 <div className="col-12  col-sm-4 text-white">
-                    <h5>Links</h5>
-                    <div className="line"/>
+                <img className="homeLogo" src='../assets/images/medLogo.png' alt="MEDLOGO"/>
+                    {/* <h5>Links</h5>
+                     <div className="line"/> 
                     <ul className="list-unstyled">
                         <li><a href="#" className="text-white">Home</a></li>
                         <li><a href="#" className="text-white">About</a></li>
                         <li><a href="#" className="text-white">Menu</a></li>
                         <li><a href="#" className="text-white">Contact</a></li>
-                    </ul>
+                    </ul> */}
                 </div>
                 <div className="col-12 col-sm-5 text-white">
                     <h5>Our Address</h5>
-                    <div className="line"/>
+                    <hr color="white"/>
+                    {/* <div className="line"/> */}
                     <address>
 		              121, Clear Water Bay Road<br />
 		              Clear Water Bay, Kowloon<br />

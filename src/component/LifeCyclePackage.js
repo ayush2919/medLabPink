@@ -43,7 +43,7 @@ class ShowAtOnce extends Component{
   render(){
     return(
       <>
-       <div className="container" style={{paddingTop:"80px"}}>
+       <div className="container properPadding">
        <h3 className="mt-5">LifeCylce Disorder</h3><hr/>
          <div className="row">
             {
@@ -70,14 +70,14 @@ export default class LifeCylce extends Component {
   
   render(){
    return(
-   <>  
+   <div id="lifecycle">  
     <Media query="(min-width:768px)">
     <Slick/>
    </Media>
    <Media query="(max-width:767px)">
    <ShowAtOnce/>
    </Media>  
-   </>
+   </div>
    );}
 }
 
