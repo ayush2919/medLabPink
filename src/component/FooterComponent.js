@@ -6,7 +6,7 @@ function Footer(props) {
         <div className="container">
             <div className="row justify-content-center">             
                 <div className="col-12  col-sm-4 text-white">
-                <img className="homeLogo" src='../assets/images/medLogo.png' alt="MEDLOGO"/>
+                <img className="homeLogo" style={{position:"relative"}} src='../assets/images/medLogo.png' alt="MEDLOGO"/>
                     {/* <h5>Links</h5>
                      <div className="line"/> 
                     <ul className="list-unstyled">

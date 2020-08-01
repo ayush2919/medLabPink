@@ -63,9 +63,7 @@
 .homeLogo{
   width: 300px;
   height: 200px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  position: relative;
   /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.8); */
 }
 .medlabPhone i{
@@ -117,9 +115,11 @@
 
 /* Change color on hover */
 .bm-item:hover {
-  color: white;
+  transform: scale(1.05);
 }
-
+.bm-item{
+  transition: all 0.3s linear;
+}
 /* The rest copied directly from react-burger-menu docs */
 
 /* Position and sizing of burger button */
@@ -169,7 +169,6 @@
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
-
 /* small screen nav */
 .burgerNav{
   width: 100%;
@@ -195,7 +194,16 @@
   
   margin: 20px;
 }
-
+.hamInStyle img{
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top:0px;
+  left: 0px;
+}
+.hamInStyle a{
+  color:#2a93c9;
+}
 /* what Makes US Different Section */
 .whatMakes{
   height:100px;
