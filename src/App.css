@@ -1,3 +1,6 @@
+.bodyColor{
+  background-color:  #f0f9ff;
+}
 /* Header */
 .carousel img{
   height: 100vh;
@@ -261,3 +264,23 @@
 .fa-map-marker{
   color: #c4302b;
 }
+
+.whatMakes{
+  height:100px;
+  width: 100px;
+  background-color: #f5f6fa;
+  border-radius: 50px;
+  text-align: center;
+  margin: 5px;
+  line-height: 120px;
+  border: 2px solid silver;
+}
+.fa-stethoscope{
+  color:#0097e6 
+} 
+.fa-medkit{
+  color:brown 
+} 
+.fa-heartbeat{
+  color:red
+} 
