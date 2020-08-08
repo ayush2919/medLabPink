@@ -1,14 +1,24 @@
 import React,{Component} from 'react';
 import RenderPackages from './RenderPackges';
-import KidneyPackages from '../data/KidneyTest';
-import LiverPackages from '../data/LiverTest';
-import HeartPackages from '../data/HeartTest';
-import InfertilityPackages from '../data/InfertilityTest';
-import ThyroidPackages from '../data/ThyroidTest';
-import DiabetesPackages from '../data/DiabetesTest';
-import AllergyPackages from '../data/AllergyTest';
+import { withRouter } from 'react-router-dom'
+import { connect } from 'react-redux';
+import {fetchDishes} from './redux/actionCreator'
+import {packages} from './redux/lifeCycle';
+// import { baseUrl } from '../component/redux/baseUrl';
 
-export default class SelectDisorder extends Component{
+const mapStateToProps = state => {
+    return {
+        KidneyPackages: state.KidneyPackages,
+        LiverPackages: state.LiverPackages,
+        HeartPackages: state.HeartPackages,
+        InfertilityPackages: state.InfertilityPackages,
+        ThyroidPackages: state.ThyroidPackages,
+        DiabetesPackages: state.DiabetesPackages,
+        AllergyPackages: state.AllergyPackages
+    }
+  }
+
+class SelectDisorder extends Component{
     
     constructor(props){
         super(props)
@@ -17,28 +27,36 @@ export default class SelectDisorder extends Component{
             itemId:props.match.params.itemId
         }
     }
+    componentDidMount() {
+        console.log("fetchesDishes");
+        fetchDishes();
+        packages();
+      }
+
    render(){
      switch(this.state.itemId){
          case '1':
-            return <RenderPackages cards={LiverPackages} name={"Liver Packages/Test"}/>
+            return <RenderPackages cards={this.props.LiverPackages} name={"Liver Packages/Test"}/>
         case '2':
-            return <RenderPackages cards={DiabetesPackages} name={"Diabetes Packages/Test"}/>  
+            return <RenderPackages cards={this.props.DiabetesPackages} name={"Diabetes Packages/Test"}/>  
         case '3':
-            return <RenderPackages cards={KidneyPackages} name={"Kidney Packages/Test"}/>       
+            return <RenderPackages cards={this.props.KidneyPackages} name={"Kidney Packages/Test"}/>       
         case '4':
             return <RenderPackages cards={[]} name={"Lungs Packages/Test"}/>  
         case '5':
-            return <RenderPackages cards={InfertilityPackages} name={"Infertility Packages/Test"}/>
+            return <RenderPackages cards={this.props.InfertilityPackages} name={"Infertility Packages/Test"}/>
         case '6':
             return <RenderPackages cards={[]} name={"CBC Packages/Test"}/>
         case '7':
-            return <RenderPackages cards={HeartPackages} name={"Heart Packages/Test"}/>
+            return <RenderPackages cards={this.props.HeartPackages} name={"Heart Packages/Test"}/>
         case '8':
-            return <RenderPackages cards={ThyroidPackages} name={"Thyroid Packages/Test"}/>
+            return <RenderPackages cards={this.props.ThyroidPackages} name={"Thyroid Packages/Test"}/>
         case '9':
-            return <RenderPackages cards={AllergyPackages} name={"Allergy Packages/Test"}/>            
+            return <RenderPackages cards={this.props.AllergyPackages} name={"Allergy Packages/Test"}/>            
         default:
             return <RenderPackages cards={[]}/>   
      }
    }
 }
+
+export default withRouter(connect(mapStateToProps,fetchDishes)(SelectDisorder));

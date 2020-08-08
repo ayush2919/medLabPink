@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.0",
     "bootstrap-social": "^5.1.1",
+    "cross-fetch": "^3.0.5",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "react": "^16.13.1",
@@ -23,6 +24,9 @@
     "react-slick": "^0.26.1",
     "react-touch-carousel": "^0.9.4",
     "reactstrap": "^8.4.1",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
