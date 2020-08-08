@@ -1,10 +1,27 @@
-import {createStore} from 'redux';
-import { Reducer, initialState } from './reducer'
+import {createStore, combineReducers, applyMiddleware} from 'redux';
+import { Heart } from './LifeCycle/Heart';
+import { Liver } from './LifeCycle/Liver';
+import { Infertility } from './LifeCycle/Infertility';
+import { Thyroid } from './LifeCycle/Thyroid';
+import { Diabetes } from './LifeCycle/Diabetes';
+import { Kidney } from './LifeCycle/Kidney';
+import { Allergy } from './LifeCycle/Allergy';
+
+import thunk from 'redux-thunk';
+import logger from 'redux-logger';
 
 export const ConfigureStore = () => {
     const store = createStore(
-        Reducer, // reducer
-        initialState, // our initialState
+        combineReducers({
+            heart: Heart,
+            liver:Liver,
+            infertility:Infertility,
+            thyroid:Thyroid,
+            diabetes:Diabetes,
+            kidney:Kidney,
+            allergy:Allergy
+        }),
+        applyMiddleware(thunk, logger)
     );
 
     return store;

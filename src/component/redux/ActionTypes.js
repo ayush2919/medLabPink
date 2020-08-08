@@ -1,0 +1,2 @@
+export const PACKAGES_FAILED = 'PACKAGES_FAILED';
+export const ADD_PACKAGES = 'ADD_PACKAGES';

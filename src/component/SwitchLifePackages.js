@@ -3,18 +3,18 @@ import RenderPackages from './RenderPackges';
 import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
 import {fetchDishes} from './redux/actionCreator'
-import {packages} from './redux/lifeCycle';
+
 // import { baseUrl } from '../component/redux/baseUrl';
 
 const mapStateToProps = state => {
     return {
-        KidneyPackages: state.KidneyPackages,
-        LiverPackages: state.LiverPackages,
-        HeartPackages: state.HeartPackages,
-        InfertilityPackages: state.InfertilityPackages,
-        ThyroidPackages: state.ThyroidPackages,
-        DiabetesPackages: state.DiabetesPackages,
-        AllergyPackages: state.AllergyPackages
+        KidneyPackages: state.kidney,
+        LiverPackages: state.liver,
+        HeartPackages: state.heart,
+        InfertilityPackages: state.infertility,
+        ThyroidPackages: state.thyroid,
+        DiabetesPackages: state.diabetes,
+        AllergyPackages: state.allergy
     }
   }
 
@@ -30,8 +30,7 @@ class SelectDisorder extends Component{
     componentDidMount() {
         console.log("fetchesDishes");
         fetchDishes();
-        packages();
-      }
+     }
 
    render(){
      switch(this.state.itemId){

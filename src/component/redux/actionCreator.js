@@ -1,5 +1,5 @@
+import * as ActionTypes from './ActionTypes';
 import { baseUrl } from './baseUrl';
-import { packages } from './lifeCycle';
 
 export const fetchDishes = () => (dispatch) => {
     return fetch(baseUrl + 'lifeCycle')
@@ -19,18 +19,17 @@ export const fetchDishes = () => (dispatch) => {
             throw errmess;
       })
     .then(response => response.json())
-    // .then(lifeCyclePackages => dispatch(console.log(lifeCyclePackages)))
     .then(lifeCyclePackages => dispatch(Heart(lifeCyclePackages)))
     .catch(error => dispatch(lifeCycleFailed(error.message)));
 }
 
-export const Heart=(dispatch) =>(lifeCyclePackages)=>{
+export const Heart=(lifeCyclePackages)=>{
   return {
-    type:"ayush",
+    type:ActionTypes.ADD_PACKAGES,
     payload:lifeCyclePackages
   }
 }
 export const lifeCycleFailed = (errmess) => ({
-    type: "failed",
+    type: ActionTypes.PACKAGES_FAILED,
     payload: errmess
 });
