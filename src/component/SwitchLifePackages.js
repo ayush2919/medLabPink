@@ -29,29 +29,30 @@ class SelectDisorder extends Component{
     }
     componentDidMount() {
         console.log("fetchesDishes");
-        fetchDishes();
+        // console.log("ayush");
+         fetchDishes();
      }
 
    render(){
      switch(this.state.itemId){
          case '1':
-            return <RenderPackages cards={this.props.LiverPackages} name={"Liver Packages/Test"}/>
+            return <RenderPackages cards={this.props.LiverPackages.liver} err={this.props.LiverPackages.errMess} name={"Liver Packages/Test"}/>
         case '2':
-            return <RenderPackages cards={this.props.DiabetesPackages} name={"Diabetes Packages/Test"}/>  
+            return <RenderPackages cards={this.props.DiabetesPackages.diabetes} err={this.props.DiabetesPackages.errMess} name={"Diabetes Packages/Test"}/>  
         case '3':
-            return <RenderPackages cards={this.props.KidneyPackages} name={"Kidney Packages/Test"}/>       
+            return <RenderPackages cards={this.props.KidneyPackages.kidney} err={this.props.KidneyPackages.errMess} name={"Kidney Packages/Test"}/>       
         case '4':
             return <RenderPackages cards={[]} name={"Lungs Packages/Test"}/>  
         case '5':
-            return <RenderPackages cards={this.props.InfertilityPackages} name={"Infertility Packages/Test"}/>
+            return <RenderPackages cards={this.props.InfertilityPackages.infertility} err={this.props.InfertilityPackages.errMess} name={"Infertility Packages/Test"}/>
         case '6':
             return <RenderPackages cards={[]} name={"CBC Packages/Test"}/>
         case '7':
-            return <RenderPackages cards={this.props.HeartPackages} name={"Heart Packages/Test"}/>
+            return <RenderPackages cards={this.props.HeartPackages.heart} err={this.props.HeartPackages.errMess} name={"Heart Packages/Test"}/>
         case '8':
-            return <RenderPackages cards={this.props.ThyroidPackages} name={"Thyroid Packages/Test"}/>
+            return <RenderPackages cards={this.props.ThyroidPackages.thyroid} err={this.props.ThyroidPackages.errMess} name={"Thyroid Packages/Test"}/>
         case '9':
-            return <RenderPackages cards={this.props.AllergyPackages} name={"Allergy Packages/Test"}/>            
+            return <RenderPackages cards={this.props.AllergyPackages.allergy} err={this.props.AllergyPackages.errMess} name={"Allergy Packages/Test"}/>            
         default:
             return <RenderPackages cards={[]}/>   
      }

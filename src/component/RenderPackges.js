@@ -12,7 +12,7 @@ export default class RenderPackages extends Component{
             obj:null,
             maxLen:18
         };
-        //  console.log(props);
+        // console.log(props);
         this.toggleModal = this.toggleModal.bind(this);
         this.handleInfo = this.handleInfo.bind(this);
       }
@@ -31,69 +31,81 @@ export default class RenderPackages extends Component{
             })
     } 
     render(){
-      const RenderModal=()=>{
-        if(this.state.obj!=null){    
-        return(  
-        <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-        <div className="text-center">
-        <ModalHeader toggle={this.toggleModal}>Details</ModalHeader>
-          <ModalBody>
-          <h6 style={{color:"red"}}>Title</h6>
-          <p className="small">{this.state.obj.title}</p>  
-          <h6 style={{color:"red"}}>Category</h6>
-          <p className="small">{this.state.obj.Category}</p>
-          <h6 style={{color:"red"}}>Prerequisite</h6>
-          <p className="small">{this.state.obj.Prerequisite}</p>
-          <h6 style={{color:"red"}}>Report Availability</h6>
-          <p className="small">{this.state.obj.ReportAvailability}</p>
-          <h6 style={{color:"red"}}>UsefulFor</h6>
-          <p className="small">{this.state.obj.UsefulFor}</p>
-          <h6 style={{color:"red"}}>SampleRequired</h6>
-          <p className="small">{this.state.obj.SampleRequired}</p>
-          </ModalBody>   
-        </div>    
-      </Modal> 
-        )}
-       else return(<></>) 
-     }   
+      if(this.props.err!=null){
+       return(
+         <>
+         <BackImg/>
+         <div className="container">
+         <h3 className="m-5" style={{color:"red"}}>{this.props.err}!!</h3>
+         </div>
+         </>
+       )
+      }
+      else{
+        const RenderModal=()=>{
+          if(this.state.obj!=null){    
+          return(  
+          <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+          <div className="text-center">
+          <ModalHeader toggle={this.toggleModal}>Details</ModalHeader>
+            <ModalBody>
+            <h6 style={{color:"red"}}>Title</h6>
+            <p className="small">{this.state.obj.title}</p>  
+            <h6 style={{color:"red"}}>Category</h6>
+            <p className="small">{this.state.obj.Category}</p>
+            <h6 style={{color:"red"}}>Prerequisite</h6>
+            <p className="small">{this.state.obj.Prerequisite}</p>
+            <h6 style={{color:"red"}}>Report Availability</h6>
+            <p className="small">{this.state.obj.ReportAvailability}</p>
+            <h6 style={{color:"red"}}>UsefulFor</h6>
+            <p className="small">{this.state.obj.UsefulFor}</p>
+            <h6 style={{color:"red"}}>SampleRequired</h6>
+            <p className="small">{this.state.obj.SampleRequired}</p>
+            </ModalBody>   
+          </div>    
+        </Modal> 
+          )}
+         else return(<></>) 
+       }   
+            
+     return(
+         <>
+         {console.log(this.props.cards)}
+         <BackImg/>
+         <div className="container">   
+         <div className="mt-5 mb-5">  
+          <h4>{this.props.name}</h4><hr/> 
+          <div className="row">{
+              this.props.cards.map(item=>{
+                  return(
+                      <>
+                      <div className="col-9 col-md-3 outerPackages mt-5">     
+                      <Card className="packages">
+                      <CardHeader>{`${(item.title.length>this.state.maxLen)?item.title.substring(0, this.state.maxLen).concat('...'):item.title}`}</CardHeader>
+                     <CardBody>
+                     <div className="packagesBody">   
+                       <CardText>
+                       <span className="small text-align-center" style={{color:"red"}}>
+                           {item.Prerequisite}</span>
+                      </CardText>
+                      </div>
+                       </CardBody>
+                       <CardFooter>     
+                       <span style={{color:"#2a93c9"}}>{item.Price}</span>
+                      <Button id={item.id} size="sm" onClick={this.handleInfo(item.id)} outline color="info" 
+                         style={{float:"right"}}>
+                          Know More</Button>
+                      </CardFooter>  
+                     </Card> 
+                     </div>
+                      </> 
+                  )})}
           
-   return(
-       <>
-       {/* {console.log(`${this.props.name.length}`)} */}
-       <BackImg/>
-       <div className="container">   
-       <div className="mt-5 mb-5">  
-        <h4>{this.props.name}</h4><hr/> 
-        <div className="row">{
-            this.props.cards.map(item=>{
-                return(
-                    <>
-                    <div className="col-9 col-md-3 outerPackages mt-5">     
-                    <Card className="packages">
-                    <CardHeader>{`${(item.title.length>this.state.maxLen)?item.title.substring(0, this.state.maxLen).concat('...'):item.title}`}</CardHeader>
-                   <CardBody>
-                   <div className="packagesBody">   
-                     <CardText>
-                     <span className="small text-align-center" style={{color:"red"}}>
-                         {item.Prerequisite}</span>
-                    </CardText>
-                    </div>
-                     </CardBody>
-                     <CardFooter>     
-                     <span style={{color:"#2a93c9"}}>{item.Price}</span>
-                    <Button id={item.id} size="sm" onClick={this.handleInfo(item.id)} outline color="info" 
-                       style={{float:"right"}}>
-                        Know More</Button>
-                    </CardFooter>  
-                   </Card> 
-                   </div>
-                    </> 
-                )})}
-        
-        </div>   
-        </div>
-        <RenderModal/>
-       </div>      
-       </>
-      )}
+          </div>   
+          </div>
+          <RenderModal/>
+         </div>      
+         </>
+        )} 
+      }
     }
