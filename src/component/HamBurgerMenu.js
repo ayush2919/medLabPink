@@ -1,11 +1,11 @@
 import React from "react";
-import Media from 'react-media';
+import {baseUrl} from "./redux/baseUrl";
 import { slide as Menu } from "react-burger-menu";
 
 export default props => {
   return (
     <Menu {...props} className="hamInStyle">
-      <img src='../assets/images/medLogo.png' alt="MEDLOGO"/>
+      <img src= {baseUrl + 'public/images/medLogo.png'} alt="MEDLOGO"/>
       <a className="menu-item font-weight-bold" style={{paddingTop:"120px"}} href="/">
       Home
       </a>
