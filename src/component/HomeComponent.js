@@ -3,7 +3,6 @@ import LifeCycle from './LifeCyclePackage'
 import ComboPackages from './ComboPackages';
 import { ImgCarousel } from './Carousel';
 import WhatMakes from './whatMakes';
-
 class Home extends Component{
   
    render(){

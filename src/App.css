@@ -261,6 +261,25 @@
  margin:10px 12%;
 }
 }
+
+/* About */
+@media only screen and (max-width: 427px) {
+  .aboutImg img{
+    width:100%;
+    margin:0 auto; 
+  }
+  .aboutRoundImg img{
+    width:100% ;
+  }
+}
+@media only screen and (min-width: 428px) {
+  .aboutImg img{
+    width:335px;
+  }
+  .aboutRoundImg img{
+    width:500px ;
+  }
+}
 /* footer */
 .footer{
   background-color:#2a93c9;
