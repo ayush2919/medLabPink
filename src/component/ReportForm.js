@@ -15,9 +15,9 @@ class ReportForm extends Component {
    <form>
     <div className="form-group">
       <label for="exampleInputEmail1">
-      <i class="fa fa-mobile fa-lg" aria-hidden="true"></i> Moblie Number</label>
-      <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Mobile Number"/>
-      <small id="emailHelp" className="form-text text-muted">Enter Register Mobile Number</small>
+      <i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+      <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email"/>
+      <small id="emailHelp" className="form-text text-muted">Enter Registered Email </small>
     </div>
     <Button type="submit" className="btn" outline color="info">
     <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Submit</Button>
