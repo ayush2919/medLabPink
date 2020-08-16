@@ -35,7 +35,6 @@ toggleModal(itemId){
       slidesToScroll: 1
     };
     const RenderModal=()=>{
-      
       if(this.state.isModalOpen){
         var index=this.state.itemId - 1;
         var pack=HealthCarePackage[index];
