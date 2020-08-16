@@ -256,7 +256,7 @@
     width:50%;
   }
   } 
-@media only screen and (mix-width: 361px) {
+@media only screen and (min-width: 361px) {
   .formImg{
       height:80vh;
     }
