@@ -5,7 +5,7 @@ import { slide as Menu } from "react-burger-menu";
 export default props => {
   return (
     <Menu {...props} className="hamInStyle">
-      <img src= {baseUrl + 'public/images/medLogo.png'} alt="MEDLOGO"/>
+      <img src= "/" alt="MEDLOGO"/>
       <a className="menu-item font-weight-bold" style={{paddingTop:"120px"}} href="/">
       Home
       </a>

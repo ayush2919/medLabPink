@@ -6,6 +6,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import {items} from './LifeDisorder';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom'
+import { fetchImages} from "./redux/actionCreator";
+
+const mapStateToProps= state =>{
+  return{
+    images:state.images
+}}
 
 class Slick extends Component{
   render(){
@@ -66,9 +74,14 @@ class ShowAtOnce extends Component{
     )}
 }
 
-export default class LifeCylce extends Component {
+class LifeCylce extends Component {
   
+  componentDidMount(){
+    fetchImages();
+   }
+
   render(){
+    // console.log(this.props.images.images)
    return(
    <div id="lifecycle">  
     <Media query="(min-width:768px)">
@@ -81,3 +94,4 @@ export default class LifeCylce extends Component {
    );}
 }
 
+export default withRouter(connect(mapStateToProps,fetchImages)(LifeCylce));

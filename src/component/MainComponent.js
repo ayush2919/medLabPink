@@ -17,7 +17,6 @@ class Main extends Component{
              <Route exact path='/' component={()=><Home/>}/>
              <Route exact path='/about' component={()=><About/>}/>
              <Route path='/lifecycle/:itemId' component={SwitchDisorder}/>
-             {/* <Route path='/combo/:itemId' component={()=><Home/>}/> */}
              <Redirect to="/" />
          </Switch>
          <Footer/>

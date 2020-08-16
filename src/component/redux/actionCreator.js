@@ -2,7 +2,7 @@ import * as ActionTypes from './ActionTypes';
 import { baseUrl } from './baseUrl';
 
 
-export const fetchDishes = () => (dispatch) => {
+export const fetchLifeCycle = () => (dispatch) => {
     return fetch(baseUrl + 'lifeCycle')
     .then(response => {
         if (response.ok) {
@@ -53,3 +53,63 @@ export const lifeCycleFailed = (errmess) => ({
     payload: errmess
 });
 
+export const fetchImages = () => (dispatch) => {    
+  return fetch(baseUrl + 'imagePath')
+  .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        var error = new Error('Error ' + response.status + ': ' + response.statusText);
+        error.response = response;
+        throw error;
+      }
+    },
+    error => {
+          var errmess = new Error(error.message);
+          throw errmess;
+    })
+  .then(response => response.json())
+  .then(image => dispatch(addImages(image[0].imagePath)))
+  // .then(images => dispatch(console.log(images.filter(image => image=="imagePath")[0])))
+  .catch(error => dispatch(imagesFailed(error.message)));
+};
+
+export const addImages=(Images)=>({
+  type:ActionTypes.ADD_IMG,
+  payload:Images
+})
+export const imagesFailed=(errmess)=>({
+  type:ActionTypes.IMG_FAILED,
+  payload:errmess
+})
+
+
+export const fetchCombos = () => (dispatch) => {    
+  return fetch(baseUrl + 'combos')
+  .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        var error = new Error('Error ' + response.status + ': ' + response.statusText);
+        error.response = response;
+        throw error;
+      }
+    },
+    error => {
+          var errmess = new Error(error.message);
+          throw errmess;
+    })
+  .then(response => response.json())
+  // .then(comboPackages => dispatch(addcombos(comboPackages)))
+  .then(combos => dispatch(console.log(combos)))
+  .catch(error => dispatch(combosFailed(error.message)));
+};
+
+export const addcombos=(combos)=>({
+  type:ActionTypes.ADD_IMG,
+  payload:combos
+})
+export const combosFailed=(errmess)=>({
+  type:ActionTypes.IMG_FAILED,
+  payload:errmess
+})

@@ -6,9 +6,11 @@ import { Thyroid } from './LifeCycle/Thyroid';
 import { Diabetes } from './LifeCycle/Diabetes';
 import { Kidney } from './LifeCycle/Kidney';
 import { Allergy } from './LifeCycle/Allergy';
-
+import { Images } from './LifeCycle/Img';
+import { Combos } from './ComboPackages';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
+
 
 export const ConfigureStore = () => {
     const store = createStore(
@@ -19,7 +21,9 @@ export const ConfigureStore = () => {
             thyroid:Thyroid,
             diabetes:Diabetes,
             kidney:Kidney,
-            allergy:Allergy
+            allergy:Allergy,
+            images:Images,
+            combos:Combos
         }),
         applyMiddleware(thunk, logger)
     );

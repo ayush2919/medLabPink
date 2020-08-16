@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import RenderPackages from './RenderPackges';
 import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
-import {fetchDishes} from './redux/actionCreator'
+import {fetchLifeCycle} from './redux/actionCreator'
 
 // import { baseUrl } from '../component/redux/baseUrl';
 
@@ -30,7 +30,7 @@ class SelectDisorder extends Component{
     componentDidMount() {
         console.log("fetchesDishes");
         // console.log("ayush");
-         fetchDishes();
+         fetchLifeCycle();
      }
 
    render(){
@@ -59,4 +59,4 @@ class SelectDisorder extends Component{
    }
 }
 
-export default withRouter(connect(mapStateToProps,fetchDishes)(SelectDisorder));
+export default withRouter(connect(mapStateToProps,fetchLifeCycle)(SelectDisorder));

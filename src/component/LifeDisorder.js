@@ -1,48 +1,48 @@
 export const items=[
     {
-      id:1,
-      img:'../assets/lifecycle/liver.png',
-      name:'Liver'
+      "id":"1",
+      "img":"../assets/lifecycle/liver.png",
+      "name":"Liver"
     },
     {
-      id:2,
-      img:'../assets/lifecycle/vitaminD.png',
-      name:'Diabetes'
+      "id":"2",
+      "img":"../assets/lifecycle/vitaminD.png",
+      "name":"Diabetes"
     },
     {
-      id:3,
-      img:'../assets/lifecycle/kidney.png',
-      name:'Kidney'
+      "id":"3",
+      "img":"../assets/lifecycle/kidney.png",
+      "name":"Kidney"
     },
     {
-      id:4,
-      img:'../assets/lifecycle/lungs.png',
-      name:'Lungs'
+      "id":"4",
+      "img":"../assets/lifecycle/lungs.png",
+      "name":"Lungs"
     },
     {
-      id:5,
-      img:'../assets/lifecycle/infertility.png',
-      name:'Infertility'
+      "id":"5",
+      "img":"../assets/lifecycle/infertility.png",
+      "name":"Infertility"
     },
     {
-      id:6,
-      img:'../assets/lifecycle/cbc.png',
-      name:'CBC'
+      "id":"6",
+      "img":"../assets/lifecycle/cbc.png",
+      "name":"CBC"
     },
     {
-      id:7,
-      img:'../assets/lifecycle/heart.png',
-      name:'Heart'
+      "id":"7",
+      "img":"../assets/lifecycle/heart.png",
+      "name":"Heart"
     },
     {
-      id:8,
-      img:'../assets/lifecycle/thyroid.png',
-      name:'Thyroid'
+      "id":"8",
+      "img":"../assets/lifecycle/thyroid.png",
+      "name":"Thyroid"
     },
     {
-      id:9,
-      img:'../assets/lifecycle/allergy.png',
-      name:'Allergy'
+      "id":"9",
+      "img":"../assets/lifecycle/allergy.png",
+      "name":"Allergy"
     }
 ];
 
