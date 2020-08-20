@@ -54,7 +54,7 @@ toggleModal(itemId){
               <h5 style={{color:"red"}}>UsefulFor</h5>
               <p className="small">{pack.UsefulFor}</p>
           </ModalBody>   
-        </div>    
+        </div>    webkitTransform: "scaleX(-1)",webkitTransform: "scaleX(-1)",
       </Modal> 
         )
       }
@@ -64,11 +64,11 @@ toggleModal(itemId){
      <>
        <Media query="(min-width:361px)">
               <div className="container">
-            <h3 className="properPadding">HealthCare Packages</h3><hr/>
+            <h3 className="properPadding" style={{paddingTop:"600px"}}>HealthCare Packages</h3><hr/>
             <div className="row mt-5">
             <div className="col-12 col-md-4">
             <Card>
-              <CardHeader> Primary Package </CardHeader>
+              <CardHeader style={{backgroundColor:"#C0C0C0"}}> BASIC PACKAGE </CardHeader>
               <CardBody></CardBody>
               <CardFooter>  <Button size="sm" outline color="info" onClick={()=>this.toggleModal(1)}
                 style={{float:"right"}}> 
@@ -78,7 +78,7 @@ toggleModal(itemId){
             </div>  
             <div className="col-12 col-md-4">
             <Card>
-              <CardHeader> Primary Package </CardHeader>
+              <CardHeader style={{backgroundColor:"#daa520"}}> PRIMARY PACKAGE </CardHeader>
               <CardBody></CardBody>
               <CardFooter>  <Button size="sm" outline color="info"  onClick={()=>this.toggleModal(2)}
               style={{float:"right"}}> 
@@ -88,7 +88,7 @@ toggleModal(itemId){
             </div>
             <div className="col-12 col-md-4">
             <Card>
-            <CardHeader> Primary Package </CardHeader>
+            <CardHeader style={{backgroundColor:"#CD7F32"}}> COMPLEX PACKAGE </CardHeader>
               <CardBody></CardBody>
               <CardFooter>  <Button size="sm" outline color="info" onClick={()=>this.toggleModal(3)}
                style={{float:"right"}}> 
@@ -102,11 +102,11 @@ toggleModal(itemId){
        </Media>
        <Media query="(max-width:360px)">
             <div className="container">
-            <h3 className="properPadding">HealthCare Packages </h3><hr/>
+            <h3 className="properPadding" style={{paddingTop:"600px"}}>HealthCare Packages </h3><hr/>
             <Slider {...settings}>
             <div className="">
             <Card>
-            <CardHeader> Primary Package </CardHeader>
+            <CardHeader style={{backgroundColor:"#C0C0C0"}}> BASIC PACKAGE </CardHeader>
               <CardBody></CardBody>
               <CardFooter>  <Button size="sm" outline color="info" onClick={()=>this.toggleModal(1)}
               style={{float:"right"}}> 
@@ -116,7 +116,7 @@ toggleModal(itemId){
             </div>
             <div className="">
             <Card>
-            <CardHeader> Primary Package </CardHeader>
+            <CardHeader style={{backgroundColor:"#daa520"}}> PRIMARY PACKAGE </CardHeader>
               <CardBody></CardBody>
               <CardFooter>  <Button size="sm" outline color="info" style={{float:"right"}} 
               onClick={()=>this.toggleModal(2)}> 
@@ -126,7 +126,7 @@ toggleModal(itemId){
             </div>
             <div className="">
             <Card>
-            <CardHeader> Primary Package </CardHeader>
+            <CardHeader style={{backgroundColor:"#CD7F32"}}> COMPLEX PACKAGE </CardHeader>
               <CardBody></CardBody>
               <CardFooter>  <Button size="sm" outline color="info" style={{float:"right"}}
               onClick={()=>this.toggleModal(3)}> 
