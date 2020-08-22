@@ -28,8 +28,8 @@
   top: 80px;
   margin: 0px auto;
   width: 90%;
-  border: 5px solid #2295bc;
-  border-radius: 2px;
+  /* border: 5px solid #2295bc;
+  border-radius: 2px; */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.8);
 }
 }
@@ -44,7 +44,6 @@
   margin-left: 5%;
   margin-right:5%;
   border-radius: 4px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.8);
 }
 .navScreenSize{
   background-color:#2295bc ;
@@ -54,17 +53,10 @@
  margin-right: 25px;
  transition-delay:2s ;
 }
-/* #medlabLogo{
-  position: absolute;
-  z-index: 2;
-  top: 30px;
-  left: 5%;
-} */
 .homeLogo{
-  width: 300px;
-  height: 200px;
+  width: 220px;
+  height: 100px;
   position: relative;
-  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.8); */
 }
 .medlabPhone i{
   position: absolute;
@@ -82,7 +74,7 @@
 #medlabPhoneNo{
   position: absolute;
   z-index: 2;
-  top: 11%;
+  top: 13%;
   right: 20%;
 }
 .toggleLogo{
@@ -260,6 +252,16 @@
   width: 300px;
   height: 40vh;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.8);
+}
+@media only screen and (max-width: 767px) {
+ .formImg{
+   height:50vh
+ }
+}
+@media only screen and (min-width: 768px) {
+  .formImg{
+    height: 60vh;
+  }
 }
 
 /* LIFECYCLE */

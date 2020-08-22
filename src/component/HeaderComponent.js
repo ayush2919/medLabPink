@@ -89,9 +89,11 @@ class Header extends Component{
             <div className="medlab">
             <Media query="(min-width:1290px)"> 
                 <div>
+                   <div  className="offset-1 mt-5">  
                   <img src="../assets/images/medLogo.png" className="homeLogo" alt="MedLab"/>
+                   </div>
                   <div className="medlabPhone">
-                  <i className="fa fa-phone fa-2x" aria-hidden="true"></i>
+                  <i className="fa fa-phone fa-2x mt-3" aria-hidden="true"></i>
                   </div>
                   {/* <img src="../assets/images/phone.png"  id="medlabPhone" alt="Contact-No."/> */}
                   <div id="medlabPhoneNo"> 

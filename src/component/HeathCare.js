@@ -64,7 +64,7 @@ toggleModal(itemId){
      <>
        <Media query="(min-width:361px)">
               <div className="container">
-            <h3 className="properPadding" style={{paddingTop:"600px"}}>HealthCare Packages</h3><hr/>
+            <h3 className="properPadding" style={{paddingTop:"500px"}}>HealthCare Packages</h3><hr/>
             <div className="row mt-5">
             <div className="col-12 col-md-4">
             <Card>
@@ -102,7 +102,7 @@ toggleModal(itemId){
        </Media>
        <Media query="(max-width:360px)">
             <div className="container">
-            <h3 className="properPadding" style={{paddingTop:"600px"}}>HealthCare Packages </h3><hr/>
+            <h3 className="properPadding" style={{paddingTop:"400px"}}>HealthCare Packages </h3><hr/>
             <Slider {...settings}>
             <div className="">
             <Card>

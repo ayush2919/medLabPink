@@ -3,16 +3,31 @@ import {Button} from 'reactstrap';
 
 function Footer(props) {
     return(
-    <div id="contact" className="footer mt-5">
-        <div className="container">
-            <div className="row justify-content-center">             
-                <div className="col-12  col-sm-4 text-white">
+        <div id="contact" className="footer mt-5">
+          <div className="container">
+          <div className="row">
+            <div className="col-12  col-md-4 ">
+              <div className="text-white">
                 <img className="homeLogo" src='../assets/images/medLogo.png' alt="MEDLOGO"/>
                 </div>
-                <div className="col-12 col-md-4 text-white">
+                    <div className="ml-2 mt-2 socialMediaIcons">
+                        <a href="https://www.youtube.com/watch?v=sHLVoL1tDR0&t=223s">
+                            <i className="fa fa-lg fa-facebook"/>
+                        </a>
+                        <a href="#">
+                        <i className="fa fa-lg fa-instagram"/>
+                        </a>
+                        <a href="#">
+                        <i className="fa fa-lg fa-twitter"/>
+                        </a>
+                        <a href="#">
+                        <i className="fa fa-lg fa-linkedin"/>
+                        </a>
+                   </div>
+              </div>   
+              <div className="col-12 col-md-4 text-white">
                     <h5>Our Address</h5>
                     <hr color="white"/>
-                    {/* <div className="line"/> */}
                     <address>
 		              121, Clear Water Bay Road<br />
 		              Clear Water Bay, Kowloon<br />
@@ -40,33 +55,15 @@ function Footer(props) {
                         </div>
                         </div>
                     </form>   
-                         
                 </div>    
-                {/* <div className=" col-12 col-sm-3 align-self-center">
-                    <div className="text-center socialMediaIcons">
-                     <a href="https://www.youtube.com/watch?v=sHLVoL1tDR0&t=223s">
-                         <i className="fa fa-lg fa-facebook"/>
-                    </a>
-                    <a href="#">
-                    <i className="fa fa-lg fa-instagram"/>
-                    </a>
-                    <a href="#">
-                    <i className="fa fa-lg fa-twitter"/>
-                    </a>
-                    <a href="#">
-                    <i className="fa fa-lg fa-linkedin"/>
-                    </a>
-                    </div>
-                </div> */}
-            </div>
-            <div className="row justify-content-center text-white">             
+              </div>
+             <div className="row justify-content-center text-white">             
                 <div className="col-auto">
                     <p>© Copyright 2020 MedLab</p>
                 </div>
-            </div>
-        </div>
-    </div>
-    )
-}
+               </div> 
+           </div>   
+         </div>   
+    )}
 
 export default Footer;
