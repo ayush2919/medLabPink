@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import LifeCycle from './LifeCyclePackage'
-import { ImgCarousel } from './Carousel';
+import  ImgCarousel  from './Carousel';
 import WhatMakes from './whatMakes';
 import HealthCare from './HealthCare';
 import ReportForm from './ReportForm';
@@ -12,7 +12,7 @@ class Home extends Component{
          <>
          {console.log(window.screen.height)}
          <ImgCarousel/>
-         <Appoint/> 
+         {/* <Appoint/>  */}
          <WhatMakes/>
          <ReportForm/>
          <HealthCare/>

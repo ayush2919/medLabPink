@@ -1,63 +1,98 @@
-import React, { useState } from 'react';
-import { Carousel,CarouselItem,CarouselControl,CarouselIndicators,CarouselCaption} from 'reactstrap';
+// import React, { useState } from 'react';
+// import { Carousel,CarouselItem,CarouselControl,CarouselIndicators,CarouselCaption} from 'reactstrap';
+// import Appoint from './MakeAppointMent'
 
+// export const ImgCarousel = (props) => {
+//   const [activeIndex, setActiveIndex] = useState(0);
+//   const [animating, setAnimating] = useState(false);
 
-export const ImgCarousel = (props) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
+//   //images to be slided
+//   const items = [
+//     {
+//       src: "../assets/images/1.jpg",
+//       altText: 'Slide 1',
+//       caption: 'Slide 1'
+//     },
+//     {
+//       src: "../assets/images/2.jpg",
+//       altText: 'Slide 2',
+//       caption: 'Slide 2'
+//     },
+//     {
+//       src: "../assets/images/3.jpg",
+//       altText: 'Slide 3',
+//       caption: 'Slide 3'
+//     }
+//   ];
 
-  //images to be slided
-  const items = [
-    {
-      src: "../assets/images/1.jpg",
-      altText: 'Slide 1',
-      caption: 'Slide 1'
-    },
-    {
-      src: "../assets/images/2.jpg",
-      altText: 'Slide 2',
-      caption: 'Slide 2'
-    },
-    {
-      src: "../assets/images/3.jpg",
-      altText: 'Slide 3',
-      caption: 'Slide 3'
-    }
-  ];
+//   const next = () => {
+//     if (animating) return;
+//     const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+//     setActiveIndex(nextIndex);
+//   }
 
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  }
+//   const previous = () => {
+//     if (animating) return;
+//     const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+//     setActiveIndex(nextIndex);
+//   }
 
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  }
+//   const goToIndex = (newIndex) => {
+//     if (animating) return;
+//     setActiveIndex(newIndex);
+//   }
   
-  const slides = items.map((item) => {
-    return (
-      <CarouselItem onExiting={() => setAnimating(true)} onExited={() => setAnimating(false)}
-        className="carousel" key={item.src} >  
-        <img src={item.src} alt={item.altText} />
-        {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
-      </CarouselItem>
-    );
-  });
+//   const slides = items.map((item) => {
+//     return (
+//       <CarouselItem onExiting={() => setAnimating(true)} onExited={() => setAnimating(false)}
+//         className="carousel" key={item.src} >  
+//         <img src={item.src} alt={item.altText} />
+//         {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
+//       </CarouselItem>
+//     );
+//   });
 
-  return (
-   <div className="carouselDiv"> 
-   <Carousel activeIndex={activeIndex} next={next} previous={previous}>
-   <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-      {slides}
-    </Carousel>
-   </div> 
-  );
-}
+//   return (
+//    <div className="carouselDiv"> 
+//    <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+//    <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} className="flash" />
+//       {slides}
+//     </Carousel>
+//     <Appoint/>
+//    </div> 
+//   );
+// }
+import React, { Component } from 'react';
+import Slider from "react-slick"
+import Appoint from './MakeAppointMent'
+
+class ImgCarousel extends Component {
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      speed: 3000,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+      return (
+        <div className="carousel carouselDiv">
+        <Slider {...settings}>
+        <div className="">
+          <img src="../assets/images/1.jpg"/>
+        </div>
+        <div className="">
+          <img src="../assets/images/2.jpg"/>
+        </div>
+        <div className="">
+          <img src="../assets/images/3.jpg"/>
+        </div>
+        </Slider>
+        <Appoint/>
+       </div>
+      );
+  }
+};
+
+export default ImgCarousel;

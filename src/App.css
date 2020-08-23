@@ -23,7 +23,7 @@ html {
 }
 @media only screen and (max-width: 767px) {
 .carousel img{
-    height: 75vh;
+    height: 70vh;
 }
 .madlab{
   height: 50vh;
@@ -103,21 +103,29 @@ html {
 }
 @media only screen and (min-width: 768px) {
   .Appoint{
-    top:400px;
-    left:50px;
-    width: 40%;
+    top:80%;
+    left:55%;
+    width:100%;
+    transform: translate(-50%,-50%);
   }
 }  
 @media only screen and (max-width: 767px) {
   .Appoint{
-    top:250px;
-    left:30px;
-    width: 90%;
+    top:50%;
+    left:54%;
+    width:100%;
+    transform: translate(-50%,-50%);
   }
 } 
+.carouselDiv{
+  position: relative;
+}
 .Appoint{
   position:absolute;
   color:white;
+}
+.Appoint h1{
+  font-size: calc(2rem + 1vw);
 }
 
 /* burgerMenu */
