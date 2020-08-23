@@ -53,11 +53,11 @@ export const ImgCarousel = (props) => {
   });
 
   return (
-    <div className="carouselDiv"> 
+   <div className="carouselDiv"> 
    <Carousel activeIndex={activeIndex} next={next} previous={previous}>
    <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
       {slides}
     </Carousel>
-    </div> 
+   </div> 
   );
 }

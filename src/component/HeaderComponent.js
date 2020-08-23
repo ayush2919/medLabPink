@@ -4,7 +4,6 @@ import Media from 'react-media';
 import {NavLink} from 'react-router-dom';
 import { Navbar,Nav, NavbarToggler, Collapse, NavItem} from 'reactstrap';
 
-
 class NavBar extends Component {
     constructor(props) {
         super(props);
@@ -97,8 +96,8 @@ class Header extends Component{
                   </div>
                   {/* <img src="../assets/images/phone.png"  id="medlabPhone" alt="Contact-No."/> */}
                   <div id="medlabPhoneNo"> 
-                  <a href="tel:+91123444" className="text-white"> +91-936-964-1109</a><br/>
-                  <a href="tel:+9124444" className="text-white"> +91-916-115-7505</a>
+                  <a href="tel:+919369641109" className="text-white"> +91-936-964-1109</a><br/>
+                  <a href="tel:+919161157505" className="text-white"> +91-916-115-7505</a>
                   </div>
                   <div className={`${this.state.scroll>(window.screen.height)/5? 'flash fixed-top navScreenSize ': 'navBar navShort'}`}>
                     <NavBar/>

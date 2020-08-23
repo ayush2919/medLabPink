@@ -25,7 +25,7 @@ function Footer(props) {
                         </a>
                    </div>
               </div>   
-              <div className="col-12 col-md-5 text-white Margin">
+              <div className="col-12 col-md-4 text-white Margin">
                     <h5>Our Address</h5>
                     <hr color="white"/>
                     <address>
@@ -37,7 +37,7 @@ function Footer(props) {
                       <a className="text-white" href ="mailto:confusion@food.net"> confusion@food.net</a>
                     </address>
                 </div>
-                <div className="text-white col-md-4 Margin" style={{lineHeight:"1.1",color:""}}>
+                <div className="text-white col-md-5 Margin" style={{lineHeight:"1.1",color:""}}>
                    <h5>News Letter</h5><hr color="white"/> 
                    <small >Enter your email address to receive up-to-date news,
                         new patient information and other useful stuff, delivered right to your inbox.</small>

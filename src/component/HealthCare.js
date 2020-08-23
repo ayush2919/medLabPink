@@ -137,7 +137,7 @@ toggleModal(itemId){
             <div className="mt-3">
             <Card className="threeD">
               <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg"/>
-              <div style={{position:"absolute",top:"0px",left:"22px"}}>
+              <div style={{position:"absolute",top:"0px",left:"24px"}}>
               <h4 className="healthCare tag threeD">BASIC</h4>
               </div>
               <Button className="threeD" size="lg" color="info" onClick={()=>this.toggleModal(1)}> 
@@ -147,7 +147,7 @@ toggleModal(itemId){
             <div className="mt-3">
             <Card className="threeD">
               <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg"/>
-              <div style={{position:"absolute",top:"16px",left:"8px"}}>
+              <div style={{position:"absolute",top:"16px",left:"9px"}}>
               <h4 className="healthCare tag threeD">PRIMARY</h4>
               </div>
               <Button className="threeD" size="lg" color="info" onClick={()=>this.toggleModal(2)}> 
@@ -157,15 +157,15 @@ toggleModal(itemId){
             <div className="mt-3">
             <Card className="threeD">
               <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg"/>
-              <div style={{position:"absolute",top:"2px",left:"21px"}}>
+              <div style={{position:"absolute",top:"2px",left:"23px"}}>
               <h4 className="healthCare tag threeD">DELUX</h4>
               </div>
               <Button className="threeD" size="lg" color="info" onClick={()=>this.toggleModal(3)}> 
               Know More</Button>
             </Card>
             </div>
-            <RenderModal/>
             </Slider>
+            <RenderModal/>
             </div>
        </Media>
      </>    

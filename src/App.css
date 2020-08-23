@@ -1,8 +1,11 @@
 .bodyStyle{
   background-color:  #f0f9ff;
   font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden;
 }
-
+html {
+  overflow-y: scroll;
+}
 /* Header */
 .carousel img{
   height: 100vh;
@@ -20,20 +23,20 @@
 }
 @media only screen and (max-width: 767px) {
 .carousel img{
-    height: 25vh;
+    height: 75vh;
 }
 .madlab{
   height: 50vh;
 }
-.carouselDiv{
+/* .carouselDiv{
   position: relative; 
   top: 80px;
   margin: 0px auto;
   width: 90%;
-  /* border: 5px solid #2295bc;
-  border-radius: 2px; */
+  border: 5px solid #2295bc;
+  border-radius: 2px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.8);
-}
+} */
 }
 .navBar{
   position: absolute;
@@ -50,7 +53,11 @@
 .navScreenSize{
   background-color:#2295bc ;
 }
-
+.topNavLogo img{
+  position: absolute;
+  top:8%;
+  left:42%;
+}
 .nav-link{
  margin-right: 25px;
  transition-delay:2s ;
@@ -94,7 +101,24 @@
   width: 100%;
   height: 70vh;
 }
-
+@media only screen and (min-width: 768px) {
+  .Appoint{
+    top:400px;
+    left:50px;
+    width: 40%;
+  }
+}  
+@media only screen and (max-width: 767px) {
+  .Appoint{
+    top:250px;
+    left:30px;
+    width: 90%;
+  }
+} 
+.Appoint{
+  position:absolute;
+  color:white;
+}
 
 /* burgerMenu */
 .bm-item {
@@ -299,23 +323,13 @@
 /* Health-PACKAGES */
 .tag {
 	display: inline-block;
-  
   width: auto;
 	height: 38px;
-	
 	background-color: #2a93c9;
 	-webkit-border-radius: 3px 4px 4px 3px;
 	-moz-border-radius: 3px 4px 4px 3px;
 	border-radius: 3px 4px 4px 3px;
-	
 	border-left: 1px solid #2a93c9;
-
-	/* This makes room for the triangle */
-	/* margin-left: 25px; */
-	
-	/* position: absolute;; */
-  /* top:0px;
-  left: 150px; */
 	color: white;
 	font-weight: 300;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -408,6 +422,9 @@
     width:500px ;
   }
 }
+ .backImg{
+  transform:scaleX(-1);
+ }
 /* footer */
 .footer{
   background-color:#2a93c9;

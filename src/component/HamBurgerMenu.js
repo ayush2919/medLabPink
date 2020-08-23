@@ -9,7 +9,7 @@ export default props => {
       <a className="menu-item font-weight-bold" style={{paddingTop:"120px"}} href="/">
       Home
       </a>
-      <a className="menu-item font-weight-bold" href="/about">
+      <a className="menu-item font-weight-bold" href="./about">
       ABOUT US
       </a>
       <a className="menu-item font-weight-bold " href="#">
