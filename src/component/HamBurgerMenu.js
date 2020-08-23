@@ -1,6 +1,6 @@
 import React from "react";
 import {baseUrl} from "./redux/baseUrl";
-import { slide as Menu } from "react-burger-menu";
+import { stack as Menu } from "react-burger-menu";
 
 export default props => {
   return (
