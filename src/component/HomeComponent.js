@@ -1,9 +1,8 @@
 import React,{Component} from 'react';
 import LifeCycle from './LifeCyclePackage'
-import ComboPackages from './HeathCare';
 import { ImgCarousel } from './Carousel';
 import WhatMakes from './whatMakes';
-import HealthCare from './HeathCare';
+import HealthCare from './HealthCare';
 import ReportForm from './ReportForm';
 class Home extends Component{
    render(){

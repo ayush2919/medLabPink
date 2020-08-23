@@ -65,13 +65,13 @@ class TopFixNav extends Component {
                     <div>  
                      <a href="#">
                      <i className="fa fa-lg fa-phone"/>
-                     <span className="text-white ml-2 small">8448773119</span>
+                     <span className="text-white ml-2 small">+91-936-964-1109</span>
                      </a>
                      </div>
                      <div>
-                      <a href="#">
+                      <a href="https://goo.gl/maps/LcwPZhpLMPhGnBiY6">
                         <i className="fa fa-lg fa-map-marker"/>
-                        <span className="text-white ml-2 small">147A,Twin tower Bihar</span>
+                        <span className="text-white ml-2 small"> RZ/D-49,Nangli Vihar</span>
                       </a>
                      </div>
                 </div>    

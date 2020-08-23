@@ -32,7 +32,7 @@ class NavBar extends Component {
                          <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar >
                             <NavItem>
-                                <NavLink className="nav-link font-weight-bold ml-4 active"  to='/'>HOME</NavLink>
+                                <NavLink className="nav-link font-weight-bold ml-5 active"  to='/'>HOME</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link font-weight-bold active" to='/about'>ABOUT US</NavLink>
@@ -50,7 +50,7 @@ class NavBar extends Component {
                                 <NavLink className="nav-link font-weight-bold active" to='/aboutus'>BUY PACKAGES</NavLink>
                             </NavItem>
                             <NavItem>
-                            <a className="nav-link font-weight-bold active" href="../#lifecycle">LIFECYCLE DISORDER</a>
+                            <a className="nav-link font-weight-bold active" href="../#lifecycle">LIFECYCLE</a>
                             </NavItem>
                             <NavItem>
                             <a className="nav-link font-weight-bold active" href="#contact">CONTACT US</a>
@@ -97,8 +97,8 @@ class Header extends Component{
                   </div>
                   {/* <img src="../assets/images/phone.png"  id="medlabPhone" alt="Contact-No."/> */}
                   <div id="medlabPhoneNo"> 
-                  <a href="tel:+91123444" className="text-white">+91-8448773319</a><br/>
-                  <a href="tel:+9124444" className="text-white">+91-8448773319</a>
+                  <a href="tel:+91123444" className="text-white"> +91-936-964-1109</a><br/>
+                  <a href="tel:+9124444" className="text-white"> +91-916-115-7505</a>
                   </div>
                   <div className={`${this.state.scroll>(window.screen.height)/5? 'flash fixed-top navScreenSize ': 'navBar navShort'}`}>
                     <NavBar/>

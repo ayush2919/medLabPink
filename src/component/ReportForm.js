@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-import { Card,CardBody,CardHeader,Button} from 'reactstrap';
+import {Button} from 'reactstrap';
+
 
 class ReportForm extends Component {
-    constructor(props) {
-      super(props);
-
-    }
+  
   render(){
    return(
      <div className="properPadding">
@@ -20,7 +18,7 @@ class ReportForm extends Component {
           <small id="emailHelp" className="form-text text-white">Enter Your Registered Email </small>
         </div>
         </form>  
-        <Button type="submit" className="btn btnInput mt-2" outline color="info">
+        <Button type="submit" className="btn btnInput threeD mt-2" outline color="secondary">
         <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Submit</Button>
         </div>
          </div>

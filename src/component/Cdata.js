@@ -52,7 +52,7 @@ const HealthCarePackage=[
         Prerequisite:"12 hours OR Overnight fasting is recommended",
         ReportAvailability:"Same Day",
         Price:"₹700/-",
-        UsefulFor:"People with Lifestyle disorders like tiredness,anxiety,high Blood pressue,etc."
+        UsefulFor:"People with lifecycle disorders like tiredness,anxiety,high Blood pressue,etc."
    
     },
     
@@ -84,7 +84,7 @@ const HealthCarePackage=[
         Prerequisite:"12 hours OR Overnight fasting is recommended",
         ReportAvailability:"Same Day",
         Price:"₹700/-",
-        UsefulFor:"People with Lifestyle disorders like tiredness,diabetes,allergy etc. "
+        UsefulFor:"People with lifecycle disorders like tiredness,diabetes,allergy etc. "
    
     }   
 ]

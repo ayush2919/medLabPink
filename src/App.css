@@ -1,6 +1,8 @@
-.bodyColor{
+.bodyStyle{
   background-color:  #f0f9ff;
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
 /* Header */
 .carousel img{
   height: 100vh;
@@ -75,7 +77,7 @@
   position: absolute;
   z-index: 2;
   top: 13%;
-  right: 20%;
+  right: 19%;
 }
 .toggleLogo{
   margin-left: 450px;
@@ -206,6 +208,7 @@
   margin: 5px;
   line-height: 120px;
   border: 2px solid silver;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.8);
 }
 .fa-stethoscope{
   color:#0097e6 
@@ -242,27 +245,126 @@
   left: 8%;
   /* width:50%; */
 }
-
-/* Packages */
-/* COMBO-PACKAGES */
-
+/* Report Form */
+.threeD{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.2);
+}
 .formDiv{
   border: 5px solid #2295bc;
   border-radius: 2px;
   width: 300px;
   height: 40vh;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.8);
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 320px) {
+  .formImg{
+    height:60vh
+  }
+ }
+@media only screen and (min-width: 360px) {
  .formImg{
    height:50vh
  }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 375px) {
   .formImg{
-    height: 60vh;
+    height:45vh
+  }
+ }
+@media only screen and (min-width: 411px) {
+  .formImg{
+    height:40vh
   }
 }
+@media only screen and (min-width: 414px) {
+  .formImg{
+    height: 45vh;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .formImg{
+    height: 40vh;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .formImg{
+    height: 30vh;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .formImg{
+    height: 70vh;
+  }
+}
+/* Packages */
+/* Health-PACKAGES */
+.tag {
+	display: inline-block;
+  
+  width: auto;
+	height: 38px;
+	
+	background-color: #2a93c9;
+	-webkit-border-radius: 3px 4px 4px 3px;
+	-moz-border-radius: 3px 4px 4px 3px;
+	border-radius: 3px 4px 4px 3px;
+	
+	border-left: 1px solid #2a93c9;
+
+	/* This makes room for the triangle */
+	/* margin-left: 25px; */
+	
+	/* position: absolute;; */
+  /* top:0px;
+  left: 150px; */
+	color: white;
+	font-weight: 300;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 22px;
+	line-height: 38px;
+
+  padding: 0 10px 0 10px;
+  transform: rotate(90deg);
+  
+}
+/* Makes the triangle */
+.tag:before {
+	content: "";
+	position: absolute;
+	display: block;
+	left: -19px;
+	width: 0;
+	height: 0;
+	border-top: 19px solid transparent;
+	border-bottom: 19px solid transparent;
+	border-right: 19px solid #2a93c9;
+}
+
+/* Makes the circle */
+.tag:after {
+	content: "";
+	background-color: white;
+	border-radius: 50%;
+	width: 4px;
+	height: 4px;
+	display: block;
+	position: absolute;
+	left: -9px;
+	top: 17px;
+}
+.healthCare{
+ position: absolute;
+ top:25px;
+ left:-50px;
+}
+.healthCareImg{
+  filter: grayscale(80%);
+  height: 350px;
+}
+.healthCareButton{
+  position: absolute;
+  bottom:15px;
+  right:15px;
+ }
 
 /* LIFECYCLE */
 .lifeCylce{
@@ -287,9 +389,7 @@
 @media only screen and (max-width: 767px) {
 .outerPackages{
  margin:10px 12%;
-}
-}
-
+}}
 /* About */
 @media only screen and (max-width: 427px) {
   .aboutImg img{
@@ -314,12 +414,6 @@
   margin:0px auto;
   padding: 20px 0px 20px 0px;
 }
-/* .line{
-  width: 70%;
-  height: 1px;
-  background-color: white;
-  margin-bottom:15px ;
-} */
 .socialMediaIcons i{
  height:40px;
  width: 40px;
@@ -330,15 +424,12 @@
  line-height: 40px;
  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.4);
 }
-
 .socialMediaIcons a i{
   transition: all 0.3s linear;
 }
-
 .socialMediaIcons a:hover i{
   transform: scale(1.3);
 }
-
 .fa-facebook{
   color:#3b5998  ;
 }
@@ -355,6 +446,16 @@
   color: #c4302b;
 }
 
-.properPadding{
-  padding-top: 130px;
+@media only screen and (max-width: 420px) {
+  .properPadding{
+    padding-top: 50px;
+  }
+  .Margin{
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 421px) {
+  .properPadding{
+    padding-top: 100px;
+  }
 }

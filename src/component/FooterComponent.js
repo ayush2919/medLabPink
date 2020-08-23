@@ -6,11 +6,11 @@ function Footer(props) {
         <div id="contact" className="footer mt-5">
           <div className="container">
           <div className="row">
-            <div className="col-12  col-md-4 ">
+            <div className="col-12  col-md-3 text-center">
               <div className="text-white">
                 <img className="homeLogo" src='../assets/images/medLogo.png' alt="MEDLOGO"/>
                 </div>
-                    <div className="ml-2 mt-2 socialMediaIcons">
+                    <div className="socialMediaIcons">
                         <a href="https://www.youtube.com/watch?v=sHLVoL1tDR0&t=223s">
                             <i className="fa fa-lg fa-facebook"/>
                         </a>
@@ -25,19 +25,19 @@ function Footer(props) {
                         </a>
                    </div>
               </div>   
-              <div className="col-12 col-md-4 text-white">
+              <div className="col-12 col-md-5 text-white Margin">
                     <h5>Our Address</h5>
                     <hr color="white"/>
                     <address>
-		              121, Clear Water Bay Road<br />
-		              Clear Water Bay, Kowloon<br />
-		              HONG KONG<br />
-		              <i className="fa fa-phone fa-lg "></i> +852 1234 5678<br />
+		              RZ/D-49, Nangli Vihar Extn. Part-1<br />
+		              Nangli Sakrawati,Najafagarh<br />
+		              New-Delhi (110043)<br />
+		              <i className="fa fa-phone fa-lg "></i> 936941109<br />
 		              <i className="fa fa-envelope fa-lg"></i>  
                       <a className="text-white" href ="mailto:confusion@food.net"> confusion@food.net</a>
                     </address>
                 </div>
-                <div className="text-white col-md-4" style={{lineHeight:"1.1",color:""}}>
+                <div className="text-white col-md-4 Margin" style={{lineHeight:"1.1",color:""}}>
                    <h5>News Letter</h5><hr color="white"/> 
                    <small >Enter your email address to receive up-to-date news,
                         new patient information and other useful stuff, delivered right to your inbox.</small>
