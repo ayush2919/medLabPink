@@ -16,7 +16,7 @@ return(
           </div>  
           <div className="text-center mt-2">
           <h5>Qualified Specialists</h5>
-          <h6><small>We hire the best specialists to deliver top-notch diagnostic services for you.</small>
+          <h6 className="d-none d-md-block col-12"><small>We have hire the best specialists/ practitioner to deliver top-notch diagnostic services for you.</small>
           </h6>
           </div>
           </Card>
@@ -28,7 +28,7 @@ return(
           </div>  
           <div className="text-center mt-2">
           <h5>Modern Equipment</h5>
-          <h6><small>We use the first-class medical equipment for timely diagnostics of various diseases.</small>
+          <h6 className="d-none d-md-block col-12"><small>We use the first-class medical equipment for timely diagnostics of various diseases.</small>
           </h6>
           </div>
           </Card>
@@ -39,8 +39,8 @@ return(
           <i class="fa fa-heartbeat fa-3x" aria-hidden="true"></i>
           </div>  
           <div className="text-center mt-2">
-          <h5>Emergency Diagnostics</h5>
-          <h6><small>Our emergency diagnostics services help you get the most accurate diagnosis in a minimal time.</small>
+          <h5>Emergency Diagnos</h5>
+          <h6 className="d-none d-md-block col-12"><small>Our emergency diagnostics services help you get the most accurate diagnosis in a minimal time.</small>
           </h6>
           </div>
           </Card>
