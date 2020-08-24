@@ -5,30 +5,30 @@ import { stack as Menu } from "react-burger-menu";
 export default props => {
   return (
     <Menu {...props} className="hamInStyle">
-      <img src= "/" alt="MEDLOGO"/>
+      <img src= "#" alt="MEDLOGO"/>
       <a className="menu-item font-weight-bold" style={{paddingTop:"120px"}} href="/">
       Home
       </a>
       <a className="menu-item font-weight-bold" href="./about">
-      ABOUT US
+      ABOUT
       </a>
-      <a className="menu-item font-weight-bold " href="#">
+      <a className="menu-item font-weight-bold " href="/about/#team">
       TEAM
       </a>
-      <a className="menu-item font-weight-bold" href="#">
-      TIMETABLE
+      <a className="menu-item font-weight-bold" href="/">
+      APPOINTMENT
       </a>
-      <a className="menu-item font-weight-bold" href="../#packages">
-      PACKAGES
+      <a className="menu-item font-weight-bold" href="../#healthcare">
+      HEALTHCARE
       </a>
-      <a className="menu-item font-weight-bold" href="/desserts">
-      BUY PACKAGES
+      <a className="menu-item font-weight-bold" href="../#report">
+      REPORTS
       </a>
       <a className="menu-item font-weight-bold" href="../#lifecycle">
-      LIFECYCLE DISORDER
+      LIFECYCLE
       </a>
       <a className="menu-item font-weight-bold" href="#contact">
-      CONTACT US
+      CONTACTS
       </a>
     </Menu>
   );

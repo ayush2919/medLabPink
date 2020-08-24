@@ -26,8 +26,8 @@ class Slick extends Component{
       slidesToScroll: 2
     };
     return (
-      <div className="container properPadding">
-        <h2 className="mt-5">LifeCylce Disorder</h2><hr/>
+      <div className="container">
+        <h2 className="text-center mt-1">LifeCylce Disorder</h2><hr/>
         <div className="lifeCylce">
         <Slider {...settings}>
          {
@@ -51,8 +51,8 @@ class ShowAtOnce extends Component{
   render(){
     return(
       <>
-       <div className="container properPadding">
-       <h2 className="mt-5">LifeCylce Disorder</h2><hr/>
+       <div className="container">
+       <h2 className="text-center mt-1">LifeCylce Disorder</h2><hr/>
          <div className="row">
             {
               items.map(item=>{
@@ -83,7 +83,8 @@ class LifeCylce extends Component {
   render(){
     // console.log(this.props.images.images)
    return(
-   <div id="lifecycle">  
+   <div className="lifeCycleDiv">
+    <div id="lifecycle">  
     <Media query="(min-width:768px)">
     <Slick/>
    </Media>
@@ -91,6 +92,7 @@ class LifeCylce extends Component {
    <ShowAtOnce/>
    </Media>  
    </div>
+   </div>    
    );}
 }
 

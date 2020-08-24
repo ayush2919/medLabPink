@@ -3,6 +3,7 @@ import TopFixNav from './TopFixNav';
 import Media from 'react-media';
 import {NavLink} from 'react-router-dom';
 import { Navbar,Nav, NavbarToggler, Collapse, NavItem} from 'reactstrap';
+import Appoint from './MakeAppointMent'
 
 class NavBar extends Component {
     constructor(props) {
@@ -28,34 +29,52 @@ class NavBar extends Component {
                 <Navbar dark expand="md">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
+                         <div className="">    
                          <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar >
+                            <Nav navbar>
+                             <div>   
                             <NavItem>
-                                <NavLink className="nav-link font-weight-bold ml-5 active"  to='/'>HOME</NavLink>
+                                <NavLink className="nav-link font-weight-bold active"  to='/'>HOME</NavLink>
                             </NavItem>
+                            </div>
+                            <div>
                             <NavItem>
-                                <NavLink className="nav-link font-weight-bold active" to='/about'>ABOUT US</NavLink>
+                                <NavLink className="nav-link font-weight-bold active" to='/about'>ABOUT</NavLink>
                             </NavItem>
+                            </div>
+                            <div>
                             <NavItem>
-                                <NavLink className="nav-link font-weight-bold active" to='/aboutus'>TEAM</NavLink>
+                            <a className="nav-link font-weight-bold active" href="./about/#team">TEAM</a>
                             </NavItem>
+                            </div>
+                            <div>
                             <NavItem>
-                                <NavLink className="nav-link font-weight-bold active" to='/aboutus'>TIMETABLE</NavLink>
+                            <a className="nav-link font-weight-bold active" href="../#healthcare">HEALTHCARE</a>
                             </NavItem>
+                            </div>
+                            <div>
                             <NavItem>
-                            <a className="nav-link font-weight-bold active" href="../#packages">PACKAGES</a>
+                            <a className="nav-link font-weight-bold active" href="../#report">REPORTS</a>
                             </NavItem>
-                            <NavItem>
-                                <NavLink className="nav-link font-weight-bold active" to='/aboutus'>BUY PACKAGES</NavLink>
-                            </NavItem>
+                            </div>
+                            <div>
                             <NavItem>
                             <a className="nav-link font-weight-bold active" href="../#lifecycle">LIFECYCLE</a>
                             </NavItem>
+                            </div>
+                            <div>
                             <NavItem>
-                            <a className="nav-link font-weight-bold active" href="#contact">CONTACT US</a>
+                            <a className="nav-link font-weight-bold active" href="/">APPOINTMENT</a>
                             </NavItem>
+                            </div>
+                            <div>
+                            <NavItem>
+                            <a className="nav-link font-weight-bold active" href="#contact">CONTACTS</a>
+                            </NavItem>
+                            </div>
                             </Nav>
-                        </Collapse>
+                        </Collapse> 
+                         </div>    
                     </div>
                 </Navbar>
             </div>
@@ -88,25 +107,51 @@ class Header extends Component{
             <div className="medlab">
             <Media query="(min-width:1290px)"> 
                 <div>
-                   <div  className="offset-1 mt-5">  
-                  <img src="../assets/images/medLogo.png" className="homeLogo" alt="MedLab"/>
+                  {/* <img src="../assets/images/phone.png"  id="medlabPhone" alt="Contact-No."/> */}
+                  <div className="carouselDiv">
+                  <div  className="homeLogo">  
+                  <img src="../assets/images/medLogo.png" alt="MedLab"/>
                    </div>
                   <div className="medlabPhone">
                   <i className="fa fa-phone fa-2x mt-3" aria-hidden="true"></i>
                   </div>
-                  {/* <img src="../assets/images/phone.png"  id="medlabPhone" alt="Contact-No."/> */}
-                  <div id="medlabPhoneNo"> 
+                  <div className="medlabPhoneNo"> 
                   <a href="tel:+919369641109" className="text-white"> +91-936-964-1109</a><br/>
                   <a href="tel:+919161157505" className="text-white"> +91-916-115-7505</a>
                   </div>
-                  <div className={`${this.state.scroll>(window.screen.height)/5? 'flash fixed-top navScreenSize ': 'navBar navShort'}`}>
-                    <NavBar/>
+                  <div className="medlabMap ">
+                  <a href="https://goo.gl/maps/LcwPZhpLMPhGnBiY6">
+                        <i className="fa fa-2x fa-map-marker mt-3"/>
+                      </a>
                   </div>
+                  <div className="medlabAdd">
+                  <a href="https://goo.gl/maps/LcwPZhpLMPhGnBiY6">    
+                  <span className="text-white">RZ/D-49,Nangli Vihar<br/>New Delhi</span></a>
+                  </div>    
+                  <div className="medlabPhoneNo"> 
+                  <a href="tel:+919369641109" className="text-white"> +91-936-964-1109</a><br/>
+                  <a href="tel:+919161157505" className="text-white"> +91-916-115-7505</a>
+                  </div>
+                  <div className={`${this.state.scroll>(window.screen.height)/5? 'flash fixed-top navScreenSize': 'navBar col-10'}`}>
+                    <NavBar/>
+                  </div>  
+                  <div className="Appoint">
+                  <Appoint/>
+                  </div>
+                  </div>    
                 </div>
                 </Media>
                 <Media query="(max-width:1289px)">
-                  <TopFixNav/>
+                   <div>
+                       <TopFixNav/>
+                    <div className="appointDiv"> 
+                    <div className="appointExt">  
+                    <Appoint/>
+                    </div>
+                    </div> 
+                    </div>   
                 </Media>
+                
              </div> 
         )
     }

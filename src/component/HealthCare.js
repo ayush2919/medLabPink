@@ -63,7 +63,7 @@ toggleModal(itemId){
             </div>
           </div>  
           <h5 style={{color:"red"}}>Product Constituent</h5>
-          <table className="table table-dark table-hover table-sm">
+          <table className="table table-dark table-hover table-sm col-12">
           <thead>
             <tr>
               <th>Name</th>
@@ -94,12 +94,12 @@ toggleModal(itemId){
      <>
        <Media query="(min-width:768px)">
              <div className="container">
-            <h2 className="properPadding" style={{paddingTop:"550px"}}>HealthCare Packages</h2><hr/>
+            <h2 className="mt-5 text-center">HealthCare</h2><hr/>
             <div className="row mt-5">
             <div className="col-12 col-md-4">
             <Card className="threeD">
-              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg"/>
-               <div style={{position:"absolute",top:"0px",left:"22px"}}>
+              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg" height="350px"/>
+               <div style={{position:"absolute",top:"0px",left:"-2px"}}>
                <h4 className="healthCare tag threeD">BASIC</h4>
               </div>
               <Button className="threeD " size="lg" color="info" onClick={()=>this.toggleModal(1)}> 
@@ -108,8 +108,8 @@ toggleModal(itemId){
             </div>  
             <div className="col-12 col-md-4">
             <Card className="threeD">
-              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg"/>
-              <div style={{position:"absolute",top:"14px",left:"8px"}}>
+              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg" height="350px"/>
+              <div style={{position:"absolute",top:"0px",left:"-2px"}}>
               <h4 className="healthCare tag threeD">PRIMARY</h4>
               </div>
               <Button className="threeD " size="lg" color="info" onClick={()=>this.toggleModal(2)}> 
@@ -118,9 +118,9 @@ toggleModal(itemId){
             </div>
             <div className="col-12 col-md-4">
             <Card className="threeD">
-              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg"/>
-              <div style={{position:"absolute",top:"5px",left:"20px"}}>
-              <h4 className="healthCare tag threeD">DELUX</h4>
+              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg" height="350px"/>
+              <div style={{position:"absolute",top:"0px",left:"-3px"}}>
+              <h4 className="healthCare tag threeD">COMPREHENSIVE</h4>
               </div>
               <Button className="threeD " size="lg" color="info" onClick={()=>this.toggleModal(3)}> 
               Know More</Button>
@@ -132,33 +132,33 @@ toggleModal(itemId){
        </Media>
        <Media query="(max-width:767px)">
             <div className="container">
-            <h2 style={{paddingTop:"400px"}}>HealthCare Packages </h2><hr/>
+            <h2 className="text-center">HealthCare </h2><hr/>
             <Slider {...settings}>
-            <div className="mt-3">
+            <div className="ml-4 mr-4 col-10">
             <Card className="threeD">
-              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg"/>
-              <div style={{position:"absolute",top:"0px",left:"24px"}}>
+              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg" height="250px"/>
+              <div style={{position:"absolute",top:"0px",left:"-2px"}}>
               <h4 className="healthCare tag threeD">BASIC</h4>
               </div>
               <Button className="threeD" size="lg" color="info" onClick={()=>this.toggleModal(1)}> 
               Know More</Button>
             </Card>
             </div>
-            <div className="mt-3">
+            <div className="ml-4 mr-4 col-10">
             <Card className="threeD">
-              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg"/>
-              <div style={{position:"absolute",top:"16px",left:"9px"}}>
+              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg" height="250px"/>
+              <div style={{position:"absolute",top:"0px",left:"-2px"}}>
               <h4 className="healthCare tag threeD">PRIMARY</h4>
               </div>
               <Button className="threeD" size="lg" color="info" onClick={()=>this.toggleModal(2)}> 
               Know More</Button>
             </Card>
             </div>
-            <div className="mt-3">
+            <div className="ml-4 mr-4 col-10">
             <Card className="threeD">
-              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg"/>
-              <div style={{position:"absolute",top:"2px",left:"23px"}}>
-              <h4 className="healthCare tag threeD">DELUX</h4>
+              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg" height="250px"/>
+              <div style={{position:"absolute",top:"0px",left:"-3px"}}>
+              <h4 className="healthCare tag threeD">COMPREHENSIVE</h4>
               </div>
               <Button className="threeD" size="lg" color="info" onClick={()=>this.toggleModal(3)}> 
               Know More</Button>

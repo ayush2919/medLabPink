@@ -52,9 +52,9 @@ class TopFixNav extends Component {
                   <HamBurger pageWrapId={"page-wrap"} outerContainerId={"App"} />
                 </div>
                 <Media query='(min-width:315px)'>
-                <div className="topNavLogo">
-                <img src="../assets/images/logo.png" alt="MedLab" width="80px" height="40px"/>
-                </div> 
+                  <div className="topNavLogo">
+                  <img src="../assets/images/logo.png" alt="MedLab" width="80px" height="40px"/>
+                  </div>
                 </Media>
                 <div className="actBtn" onClick={()=>this.handleDiv(this.state)}> 
                 <i id="fontAwesome" className={`${this.state.display==='block' ? 'fa fa-close fa-lg rotateIn' :'fa fa-ellipsis-v fa-2x flash'}`} 

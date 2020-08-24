@@ -1,77 +1,103 @@
 import React,{Component} from 'react';
-// import './ABSC.css';
+import ReadMoreAndLess from 'react-read-more-less';
+import ReadMoreReact from 'read-more-react';
 import { Card,CardImg, CardText, CardBody,CardHeader,CardTitle,CardFooter} from 'reactstrap';
 import BackImg from '../BackImage';
 
 class About extends Component{
 
     render(){
+        const ButtonStyling=(props)=>{
+          // console.log(color.color);
+          return(
+            <div>
+              <button className="aboutButton mt-3"  style={{backgroundColor:`${props.color}`}}>{props.name}</button>
+             </div> 
+          )
+        }
         return(
             <>
             <BackImg/>
             <div className="container">
             <div className="" style={{backgroundColor:"#f1f1f1"}}>
-                  <div className="row properPadding">
+                  <div className="row properPadding Margin">
                     <div className="col-md-4 col-12 aboutRoundImg">
                       <img style={{borderRadius:"50%"}} src="../../../assets/images/IMG6.jpg" alt="App"/>
                     </div>
-                    <div className="col-md-6 offset-md-2 col-12 ">
-                      <h1 className="xlarge-font"><b>Qur Founding</b></h1>
+                    <div className="col-md-6 offset-md-2 col-12 Margin">
+                      <h1 className="xlarge-font"><b>Our Founding</b></h1>
                       
-                      <p><span style={{fontFamily:'Alegreya',fontSize: "22px"}}> Moz was founded by Rand Fishkin and Gillian Muessig in 2004. It was called SEOmoz, and star
-                                    ted as a blog and an online community where some of the world's first SEO experts shared their research and ideas. 
-                                    We launched the Beginner's Guide to SEO and our first Search Ranking Factors study, and that hub of industry
-                              expertise transformed into a small consulting firm and led us to create some of our first SEO tools.</span></p>
-                      <button className="button-11" style={{backgroundColor:"red"}}>Read More</button>
+                      <div style={{fontFamily:'Alegreya',fontSize: "22px"}}><p>Welcome to Medlab, your number one destination for all Diagnostic Services. We're dedicated to providing you the very best of health screening and check-ups with an emphasis on Quality Control, Reliability, and Affordability.<br/></p>
+                      <p>
+                      <ReadMoreAndLess ref={this.ReadMore} charLimit={20}
+                      readMoreText={<ButtonStyling name={"Read More"} color={"red"}/>}
+                      readLessText={<ButtonStyling name={"Read Less"} color={"red"}/>} >
+                         {"Founded \n in 2019 by Dr. Manish Kumar,Medlab has come a long way from its beginnings in New Delhi. When Dr. Manish first started out, his passion for developing a facility to provide Quality with Assurance drove him to start his own lab.We hope you will be satisfied with our services as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us"}  
+                       </ReadMoreAndLess>
+                      </p></div>
                     </div>
                   </div>
                 </div>
 
                 {/* <!-- The App Section --> */}
-                 <div className="">
+                 <div className="Margin">
                   <div className="row properPadding">
                     <div className="col-md-6 col-12">
                       <h1 className="xlarge-font"><b>The Lab</b></h1>
                       <h1 className="large-font" style={{color:"MediumSeaGreen"}}><b>Why consider us?</b></h1>
-                      <p><span style={{fontSize:"36px"}}>Take photos like a pro.</span> You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                      <button className="button-11">Read More</button>
+                      <p><span style={{fontSize:"36px"}}>Two Words- WE CARE.</span> 
+                      <ReadMoreAndLess ref={this.ReadMore} charLimit={50}
+                      readMoreText={<ButtonStyling name={"Read More"} color={"#4CAF50"}/>}
+                      readLessText={<ButtonStyling name={"Read Less"} color={"#4CAF50"}/>} >
+                       {` We are not only committed in providing best of the Diagnostic services but also passionate in developing innovative and ground-breaking tests, products and tools to enhance patient care. We have procured modern and sophisticated equipment’s and have highly experienced team of doctors and technicians, providing value to the patient.`}       
+                       </ReadMoreAndLess></p>
                     </div>
-                    <div className="col-md-4 offset-md-2 col-12 aboutImg">
+                    <div className="col-md-4 offset-md-2 col-12 Margin aboutImg">
                         <img src="../../../assets/images/IMG1.jpg" />
                     </div>
                   </div>
                 </div>
 
                 {/* <!-- Clarity Section --> */}
-                 <div className="" style={{backgroundColor:"#f1f1f1"}}>
+                 <div className="Margin" style={{backgroundColor:"#f1f1f1"}}>
                   <div className="row properPadding">
-                    <div className="col-md-4 col-12 aboutImg">
+                    <div className="col-md-4 col-12 aboutImg Margin">
                       <img src="../../../assets/images/IMG1.jpg" alt="App" height="471px" />
                     </div>
-                    <div className="col-md-6 offset-md-2 col-12">
+                    <div className="col-md-6 offset-md-2 col-12 Margin">
                       <h1 className="xlarge-font"><b>Moto:Quality with assurance!</b></h1>
                       <h1 className="large-font" style={{color:"red"}}><b>How?</b></h1>
-                      <p><span style={{fontSize:"24px"}}>A revolution in resolution.</span> Sharp and clear photos with the world's best photo engine, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                      <button className="button-11" style={{backgroundColor:"red"}}>Read More</button>
+                      <p><span style={{fontSize:"24px"}}>A Revolution in Reliability.</span> We believe that “Quality is Free”, so why not implement an effective quality system. Our Core Values in Quality Management Include following six domains to measure quality in healthcare and thus be effective in living up to our motto: -
+                      <ReadMoreAndLess ref={this.ReadMore} charLimit={50}
+                      readMoreText={<ButtonStyling name={"Read More"} color={"red"}/>}
+                      readLessText={<ButtonStyling name={"Read Less"} color={"red"}/>} >
+                      {  "We are not only committed in providing best of the Diagnostic services but also passionate in developing innovative and ground-breaking tests, products and tools to enhance patient care. We have procured modern and sophisticated equipment’s and have highly experienced team of doctors and technicians, providing value to the patient." }  
+                       </ReadMoreAndLess>
+                      </p>
                     </div>
                   </div>
                 </div>
 
-                {/* <!-- The App Section --> */}
-                 <div className="">
-                  <div className="row properPadding">
+                {/* <!-- The App Setcion --> */}
+                 <div className="Margin">
+                  <div className="row properPadding ">
                     <div className="col-md-6 col-12">
-                      <h1 className="xlarge-font"><b>The App</b></h1>
-                      <h1 className="large-font" style={{color:"MediumSeaGreen"}}><b>Why buy it?</b></h1>
-                      <p><span style={{fontSize:"36px"}}>Take photos like a pro.</span> You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                      <button className="button-11">Download Application</button>
+                      <h1 className="xlarge-font"><b>To infinity and Beyond….</b></h1>
+                      <h1 className="large-font" style={{color:"MediumSeaGreen"}}><b>Our Vision </b></h1>
+                      <p><span style={{fontSize:"24px"}}>The Current Healthcare System is neither healthy nor a System.
+                      </span> 
+                      <ReadMoreAndLess ref={this.ReadMore} charLimit={50}
+                      readMoreText={<ButtonStyling name={"Read More"} color={"#4CAF50"}/>}
+                      readLessText={<ButtonStyling name={"Read Less"} color={"#4CAF50"}/>} >
+                      { "This is where we think lies an opportunity for us to emerge as one of the only healthcare providers with focus on an effective quality system. We strive to provide every patient and every customer with services and products of uncompromising quality – error free, on time, every time. We see ourselves as pioneers of modern medical laboratory services in coming future. " }  
+                       </ReadMoreAndLess></p>
                     </div>
-                    <div className="col-md-4 offset-md-2 col-12  aboutImg">
+                    <div className="Margin col-md-4 offset-md-2 col-12  aboutImg">
                         <img src="../../../assets/images/IMG1.jpg"  height="471px" alt="App"/>
                     </div>
                   </div>
                 </div>
-                <div className=""> 
+                <div id="team"> 
                  <div className="header properPadding">
                 <h1 className="xlarge-font" style={{fontSize:"5vw",textAlign:"center"}} ><b>Meet Our Team</b></h1><hr/>
                 </div>

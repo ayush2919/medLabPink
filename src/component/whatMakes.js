@@ -6,8 +6,8 @@ import { Card } from 'reactstrap';
 const WhatMakes = ()=>{
 return(
     //  <div className="container" style={{paddingTop:"500px"}}>
-     <div className="container properPadding">
-      <h3>What Makes us Different</h3><hr/>  
+     <div className="container mt-5">
+      <h3 className="text-center properPadding">What Makes us Different</h3><hr/>  
      <div className="row mt-3">
         <div className="col-md-4 col-12">
           <Card className="threeD" style={{padding:"50px 0px",borderRadius:"20px"}}>
