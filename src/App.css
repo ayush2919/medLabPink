@@ -37,21 +37,21 @@ html {
     z-index: 1;
     width: 100%;
 }
-@media only screen and (max-height:558px),(max-width:500){
+@media only screen and (max-width: 1024px){
 .medlab{
   height: 100vh;
 }
 .carousel img,.carouselDiv{
-  height: 100vh;
+  height: 80vh;
 }
 .appointDiv{
-  height:100vh
+  height:80vh
 }
 .backImg img{
-  height:100vh ;
+  height:80vh ;
 }
 }
-@media only screen and (min-height: 559px),(max-width:501px) {
+@media only screen and (min-width:1025px) {
 .appointDiv{
   height:660px
 }
