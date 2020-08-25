@@ -94,7 +94,7 @@ toggleModal(itemId){
      <>
        <Media query="(min-width:768px)">
              <div className="container">
-            <h2 className="mt-5 text-center">HealthCare</h2><hr/>
+            <h2 className="mt-5 text-center">HealthCare Packages</h2><hr/>
             <div className="row mt-5">
             <div className="col-12 col-md-4">
             <Card className="threeD">

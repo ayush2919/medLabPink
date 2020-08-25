@@ -26,8 +26,8 @@ class Slick extends Component{
       slidesToScroll: 2
     };
     return (
-      <div className="container">
-        <h2 className="text-center mt-1">LifeCylce Disorder</h2><hr/>
+      <div className="container" style={{paddingTop:"80px"}}>
+        <h1 className="text-center mt-1">LifeCylce Disorder</h1><hr/>
         <div className="lifeCylce">
         <Slider {...settings}>
          {
@@ -51,13 +51,13 @@ class ShowAtOnce extends Component{
   render(){
     return(
       <>
-       <div className="container">
-       <h2 className="text-center mt-1">LifeCylce Disorder</h2><hr/>
+       <div className="container mt-5">
+       <h2 className="text-center mt-1">LifeCylce</h2><hr/>
          <div className="row">
             {
               items.map(item=>{
                 return(
-                  <div className="col-4 cardStyling mt-2">
+                  <div className="col-4 cardStyling mt-2" >
                    <Link to={`/lifecycle/${item.id}`}>
                    <Card>  
                    <CardImg src={item.img} alt={item.name}/>

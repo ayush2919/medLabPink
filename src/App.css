@@ -172,7 +172,7 @@ html {
   left:50%; */
 }
 .Appointext h1{
-  font-size: calc(2rem + 1vw);
+  font-size: calc(1rem + 1vw);
 }
 .homeLogo{
   position: absolute;
@@ -319,33 +319,38 @@ html {
   border-color:white;
   padding: 10px 30px;
 }
-.formImg{
+.formImg img{
+ position: relative;
  width:100%;
- height:70vh;
+ height:500px;
 }
 .formPosition{
-  position:absolute;
+  position: relative;;
   top:12%;
   left: 8%;
+  height: auto;
+  /* background-color: red; */
   /* width:50%; */
 }
-.formPosition h3{
-  font-size: calc(1em + 2vw);
+/* .formPosition{
+  font-size: 2px;
 }
 .formPosition small{
   font-size: calc(5px + 1vw);
-}
+} */
 /* HealthReport */
 
-.lifeCycleDiv,.healthCareDiv,.reportDiv{
+.healthCareDiv,.reportDiv,.lifeCycleDiv{
     position: relative;
     width:100%;
+    height: auto;
     /* background-color: red; */
   }
+
 .reportDiv{
-  height: 60vh;
+  height: 75vh;
 } 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   .healthCareDiv{
     height: 420px;
   }
@@ -354,10 +359,7 @@ html {
   .healthCareDiv{
     height: 600px;
   }
-}
-.lifeCycleDiv{
-  height: 300px;
-}  
+} */
 .reportDiv img{
   position:absolute;
   top: 10%;
@@ -437,7 +439,7 @@ html {
 /* LIFECYCLE */
 .lifeCylce{
   margin: 20px 0px;
-}red
+}
 .cardStyling img{ 
  border-radius: 5px;
  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.2);
@@ -519,7 +521,7 @@ html {
     margin-top: 20px;
   }
 }
-@media only screen and (min-width: 421px) {
+@media only screen and (min-width: 1289px) {
   .properPadding{
     padding-top: 50px;
   }

@@ -6,7 +6,7 @@ import ReportForm from './ReportForm';
 export const HealthReport=()=>{
     return(
        <>
-            <div id="report" className="reportDiv mt-3 properPadding">
+            <div id="report" className="reportDiv formImg mt-3 properPadding">
               <img src="../../assets/images/report.jpg"/>
               <ReportForm/> 
              </div>  

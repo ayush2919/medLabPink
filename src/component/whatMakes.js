@@ -8,9 +8,9 @@ return(
     //  <div className="container" style={{paddingTop:"500px"}}>
      <div className="container mt-5">
       <h3 className="text-center properPadding">What Makes us Different</h3><hr/>  
-     <div className="row mt-3">
+     <div className="row mt-3" style={{display:"flex"}}>
         <div className="col-md-4 col-12">
-          <Card className="threeD" style={{padding:"50px 0px",borderRadius:"20px"}}>
+          <Card className="threeD" style={{padding:"50px 0px",borderRadius:"20px",flex:"1"}}>
           <div className="whatMakes" style={{margin:"0 auto"}}>
           <i className="fa fa-stethoscope fa-3x" aria-hidden="true"></i>
           </div>  
@@ -22,7 +22,7 @@ return(
           </Card>
         </div>
         <div className="col-md-4 col-12 Margin">
-        <Card className="threeD" style={{padding:"50px 0px",borderRadius:"20px"}}>
+        <Card className="threeD" style={{padding:"50px 0px",borderRadius:"20px",flex:"1"}}>
           <div className="whatMakes" style={{margin:"0 auto"}}>
           <i class="fa fa-medkit fa-3x" aria-hidden="true"></i>
           </div>  
