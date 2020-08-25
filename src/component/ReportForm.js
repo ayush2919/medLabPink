@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {Button} from 'reactstrap';
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class ReportForm extends Component {
   
@@ -8,6 +8,7 @@ class ReportForm extends Component {
    return(
      <div>
         <div className="formPosition text-white col-md-6 col-sm-12"> 
+        <ScrollAnimation animateIn="zoomIn" animateOnce={true} delay={300}> 
         <form>
         <div className="form-group">
           <label for="exampleInputEmail1">
@@ -18,6 +19,7 @@ class ReportForm extends Component {
         <Button type="submit" className="btn btnInput threeD mt-2" outline color="secondary">
         <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Submit</Button>
         </form>  
+        </ScrollAnimation>
         </div>
          </div>  
    );   

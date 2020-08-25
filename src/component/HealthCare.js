@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import HealthCarePackage from './Cdata'
 import Media from "react-media";
+import ScrollAnimation from 'react-animate-on-scroll';
 import { Card,CardImg,Button,Modal,ModalHeader,ModalBody} from 'reactstrap';
 
 export default class HealthCare extends Component {
@@ -94,9 +95,13 @@ toggleModal(itemId){
      <>
        <Media query="(min-width:768px)">
              <div className="container">
+          <ScrollAnimation animateIn="zoomIn" animateOnce={true}>    
             <h2 className="mt-5 text-center">HealthCare Packages</h2><hr/>
+          </ScrollAnimation>  
+          {/* <ScrollAnimation animateIn="zoomIn" animateOnce={true} delay={1000}>  */}
             <div className="row mt-5">
             <div className="col-12 col-md-4">
+            <ScrollAnimation animateIn="zoomIn" animateOnce={true} >    
             <Card className="threeD">
               <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg" height="350px"/>
                <div style={{position:"absolute",top:"0px",left:"-2px"}}>
@@ -105,8 +110,10 @@ toggleModal(itemId){
               <Button className="threeD " size="lg" color="info" onClick={()=>this.toggleModal(1)}> 
               Know More</Button>
             </Card>
+            </ScrollAnimation>
             </div>  
             <div className="col-12 col-md-4">
+            <ScrollAnimation animateIn="zoomIn" animateOnce={true} delay={100}>   
             <Card className="threeD">
               <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg" height="350px"/>
               <div style={{position:"absolute",top:"0px",left:"-2px"}}>
@@ -115,8 +122,10 @@ toggleModal(itemId){
               <Button className="threeD " size="lg" color="info" onClick={()=>this.toggleModal(2)}> 
               Know More</Button>
             </Card>
+            </ScrollAnimation>
             </div>
             <div className="col-12 col-md-4">
+            <ScrollAnimation animateIn="zoomIn" animateOnce={true} delay={300}>   
             <Card className="threeD">
               <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg" height="350px"/>
               <div style={{position:"absolute",top:"0px",left:"-3px"}}>
@@ -125,14 +134,19 @@ toggleModal(itemId){
               <Button className="threeD " size="lg" color="info" onClick={()=>this.toggleModal(3)}> 
               Know More</Button>
             </Card>
+            </ScrollAnimation>
             </div> 
               </div> 
+              {/* </ScrollAnimation> */}
               <RenderModal/>  
             </div> 
        </Media>
        <Media query="(max-width:767px)">
             <div className="container">
+            <ScrollAnimation animateIn="zoomIn" animateOnce={true}>    
             <h2 className="text-center">HealthCare </h2><hr/>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="flash" animateOnce={true} delay={200}>  
             <Slider {...settings}>
             <div className="ml-4 mr-4 col-10">
             <Card className="threeD">
@@ -165,6 +179,7 @@ toggleModal(itemId){
             </Card>
             </div>
             </Slider>
+            </ScrollAnimation>
             <RenderModal/>
             </div>
        </Media>

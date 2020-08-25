@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import {items} from './LifeDisorder';
+import ScrollAnimation from 'react-animate-on-scroll';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom'
 import { fetchImages} from "./redux/actionCreator";
@@ -27,8 +28,11 @@ class Slick extends Component{
     };
     return (
       <div className="container" style={{paddingTop:"80px"}}>
+        <ScrollAnimation animateIn="zoomIn" animateOnce={true}> 
         <h1 className="text-center mt-1">LifeCylce Disorder</h1><hr/>
+        </ScrollAnimation>
         <div className="lifeCylce">
+        <ScrollAnimation animateIn="zoomIn" animateOnce={true} delay={300}>  
         <Slider {...settings}>
          {
             items.map(item=>{
@@ -41,6 +45,7 @@ class Slick extends Component{
              )})   
          }
         </Slider>
+        </ScrollAnimation>
         </div>  
       </div>
     );
@@ -49,19 +54,24 @@ class Slick extends Component{
 
 class ShowAtOnce extends Component{
   render(){
+    var x=300
     return(
       <>
        <div className="container mt-5">
+       <ScrollAnimation animateIn="zoomIn" animateOnce={true}>
        <h2 className="text-center mt-1">LifeCylce</h2><hr/>
+       </ScrollAnimation>
          <div className="row">
             {
               items.map(item=>{
                 return(
-                  <div className="col-4 cardStyling mt-2" >
+                  <div className="col-4 cardStyling mt-2" > 
                    <Link to={`/lifecycle/${item.id}`}>
-                   <Card>  
+                   <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={x=x+70}>  
+                   <Card>   
                    <CardImg src={item.img} alt={item.name}/>
                    </Card>
+                   </ScrollAnimation>
                    </Link>
                   </div>
                   
