@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 import ReadMoreAndLess from 'react-read-more-less';
-import ReadMoreReact from 'read-more-react';
-import { Card,CardImg, CardText, CardBody,CardHeader,CardTitle,CardFooter} from 'reactstrap';
+import { Card,CardImg, CardText, CardBody,CardTitle} from 'reactstrap';
 import BackImg from '../BackImage';
 
 class About extends Component{

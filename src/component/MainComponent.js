@@ -1,25 +1,28 @@
-import React , {Component} from 'react';
+import React , {Component,Suspense,lazy} from 'react';
 import Header from './HeaderComponent';
-import Footer from './FooterComponent'
 import Home from './HomeComponent'
-import About from './AboutComponent/About'
 import SwitchDisorder from './SwitchLifePackages';
 import { Switch, Route, Redirect} from 'react-router-dom';
 
-class Main extends Component{
-    
+const About = lazy(()=> import('./AboutComponent/About'))
+const Footer = lazy(()=> import('./FooterComponent'))
 
+class Main extends Component{
     render(){
     return(
            <>
          <Header/>
          <Switch>
              <Route exact path='/' component={()=><Home/>}/>
-             <Route exact path='/about' component={()=><About/>}/>
              <Route path='/lifecycle/:itemId' component={SwitchDisorder}/>
+             <Suspense fallback={<div>Loading</div>}>
+             <Route exact path='/about' component={()=><About/>}/>
+             </Suspense>
              <Redirect to="/" />
          </Switch>
+         <Suspense fallback={<div>Loading</div>}>
          <Footer/>
+         </Suspense>
            </>
        );
     }

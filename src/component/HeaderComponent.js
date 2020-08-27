@@ -1,9 +1,10 @@
-import React,{Component} from 'react';
+import React,{Component,Suspense,lazy} from 'react';
 import TopFixNav from './TopFixNav';
 import Media from 'react-media';
 import {NavLink} from 'react-router-dom';
 import { Navbar,Nav, NavbarToggler, Collapse, NavItem} from 'reactstrap';
-import Appoint from './MakeAppointMent'
+
+const Appoint = lazy(()=> import('./MakeAppointMent'))
 
 class NavBar extends Component {
     constructor(props) {
@@ -104,8 +105,9 @@ class Header extends Component{
     }
     render(){
         return(
+            
             <div className="medlab">
-            <Media query="(min-width:1290px)"> 
+            <Media query="(min-width:1290px)">
                 <div>
                   {/* <img src="../assets/images/phone.png"  id="medlabPhone" alt="Contact-No."/> */}
                   <div className="carouselDiv">
@@ -134,22 +136,26 @@ class Header extends Component{
                   </div>
                   <div className={`${this.state.scroll>(window.screen.height)/5? 'flash fixed-top navScreenSize': 'navBar col-10'}`}>
                     <NavBar/>
-                  </div>  
+                  </div>
+                  <Suspense fallback={<div>Loading</div>}>  
                   <div className="Appoint">
                   <Appoint/>
                   </div>
+                  </Suspense>
                   </div>    
                 </div>
                 </Media>
-                <Media query="(max-width:1289px)">
+                <Media query="(max-width:1289px)"> 
                    <div>
                        <TopFixNav/>
+                    <Suspense fallback={<div>Loading</div>}>   
                     <div className="appointDiv"> 
                     <div className="appointExt">  
                     <Appoint/>
                     </div>
                     </div> 
-                    </div>   
+                    </Suspense> 
+                    </div>  
                 </Media>
                 
              </div> 

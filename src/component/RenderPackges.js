@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import BackImg from './BackImage';
-import { Card, CardText, CardBody,CardHeader,CardTitle,CardFooter ,Button,Modal, ModalHeader, ModalBody} from 'reactstrap';
+import { Card, CardText, CardBody,CardHeader,CardFooter ,Button,Modal, ModalHeader, ModalBody} from 'reactstrap';
   
 export default class RenderPackages extends Component{
 
