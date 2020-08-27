@@ -53,7 +53,7 @@ class TopFixNav extends Component {
                 </div>
                 <Media query='(min-width:315px)'>
                   <div className="topNavLogo">
-                  <img src="../assets/images/logo.png" alt="MedLab" width="80px" height="40px"/>
+                  <img src="../assets/images/medLogoFooter.png" alt="MedLab" width="120px" height="50px"/>
                   </div>
                 </Media>
                 <div className="actBtn" onClick={()=>this.handleDiv(this.state)}> 

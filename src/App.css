@@ -21,16 +21,6 @@ html {
   /* height:660px; */
   width: 100%;
 }
-/* @media only screen and (max-width:767px){
-  .backImg img{
-    height:75vh;
-  }
-} 
-@media only screen and (min-width:768px){
-  .backImg img{
-    height:100vh ;
-  }
-}  */
 
 .medlab{
     position: absolute;
@@ -84,17 +74,17 @@ html {
 }
 .topNavLogo img{
   position: absolute;
-  top:8%;
-  left:42%;
+  top:6%;
+  left:38%;
 }
 .nav-link{
  margin-right: 25px;
  transition-delay:2s ;
 }
 .homeLogo img{
-  width: 230px;
-  height: 100px;
   position: relative;
+  width: 250px;
+  height: 110px;
 }
 .medlabPhone i,.medlabMap i{
   position: absolute;
@@ -177,7 +167,7 @@ html {
 .homeLogo{
   position: absolute;
   left: 100px;
-  top: 85px;
+  top: 88px;
 }
 /* burgerMenu */
 .bm-item {
@@ -226,7 +216,7 @@ html {
 
 /* General sidebar styles */
 .bm-menu {
-  background: white;
+  background:  rgba(0, 0, 0, .70);
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
   
@@ -273,13 +263,16 @@ html {
   margin: 20px;
 }
 .hamInStyle img{
-  width: 300px;
-  height: 200px;
+
+  width: 200px;
+  height: 120px;
   position: absolute;
   top:0px;
   left: 0px;
+  margin: 30px 50px;
 }
 .hamInStyle a{
+
   color:#2a93c9;
 }
 /* what Makes US Different Section */
@@ -329,37 +322,17 @@ html {
   top:12%;
   left: 8%;
   height: auto;
-  /* background-color: red; */
-  /* width:50%; */
 }
-/* .formPosition{
-  font-size: 2px;
-}
-.formPosition small{
-  font-size: calc(5px + 1vw);
-} */
-/* HealthReport */
 
 .healthCareDiv,.reportDiv,.lifeCycleDiv{
     position: relative;
     width:100%;
     height: auto;
-    /* background-color: red; */
   }
 
 .reportDiv{
   height: 75vh;
 } 
-/* @media only screen and (max-width: 767px) {
-  .healthCareDiv{
-    height: 420px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .healthCareDiv{
-    height: 600px;
-  }
-} */
 .reportDiv img{
   position:absolute;
   top: 10%;
@@ -414,7 +387,6 @@ html {
 	border-bottom: 19px solid transparent;
 	border-right: 19px solid #2a93c9;
 }
-
 /* Makes the circle */
 .tag:after {
 	content: "";
@@ -461,6 +433,14 @@ html {
  margin:10px 12%;
 }}
 /* About */
+.aboutButton {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+}
 .aboutImg img{
   border-radius: 50px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.2);
@@ -487,6 +467,13 @@ html {
   background-color:#2a93c9;
   margin:0px auto;
   padding: 20px 0px 20px 0px;
+}
+.medLogoFooter img{
+  position: relative;
+  top: 0;
+  left: 0px;
+  width: 250px;
+  height: 110px;
 }
 .socialMediaIcons i{
  height:40px;
@@ -529,14 +516,5 @@ html {
   .properPadding{
     padding-top: 50px;
   }
-}
-
-.aboutButton {
-  border: none;
-  color: white;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #4CAF50;
 }
 

@@ -4,29 +4,29 @@ import { stack as Menu } from "react-burger-menu";
 export default props => {
   return (
     <Menu {...props} className="hamInStyle">
-      <img src= "#" alt="MEDLOGO"/>
-      <a className="menu-item font-weight-bold" style={{paddingTop:"120px"}} href="/">
+      <img src= "../assets/images/medLogo.png" alt="MEDLOGO"/>
+      <a className="menu-item font-weight-bold ml-2" style={{paddingTop:"120px"}} href="/">
       Home
       </a>
-      <a className="menu-item font-weight-bold" href="./about">
+      <a className="menu-item font-weight-bold ml-2" href="./about">
       ABOUT
       </a>
-      <a className="menu-item font-weight-bold " href="/about/#team">
+      <a className="menu-item font-weight-bold ml-2" href="/about/#team">
       TEAM
       </a>
-      <a className="menu-item font-weight-bold" href="/">
+      <a className="menu-item font-weight-bold ml-2" href="/">
       APPOINTMENT
       </a>
-      <a className="menu-item font-weight-bold" href="../#healthcare">
+      <a className="menu-item font-weight-bold ml-2" href="../#healthcare">
       HEALTHCARE
       </a>
-      <a className="menu-item font-weight-bold" href="../#report">
+      <a className="menu-item font-weight-bold ml-2" href="../#report">
       REPORTS
       </a>
-      <a className="menu-item font-weight-bold" href="../#lifecycle">
+      <a className="menu-item font-weight-bold ml-2" href="../#lifecycle">
       LIFECYCLE
       </a>
-      <a className="menu-item font-weight-bold" href="#contact">
+      <a className="menu-item font-weight-bold ml-2" href="#contact">
       CONTACTS
       </a>
     </Menu>

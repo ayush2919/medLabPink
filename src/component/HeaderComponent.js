@@ -1,10 +1,9 @@
-import React,{Component,Suspense,lazy} from 'react';
+import React,{Component} from 'react';
 import TopFixNav from './TopFixNav';
 import Media from 'react-media';
 import {NavLink} from 'react-router-dom';
 import { Navbar,Nav, NavbarToggler, Collapse, NavItem} from 'reactstrap';
-
-const Appoint = lazy(()=> import('./MakeAppointMent'))
+import Appoint from './MakeAppointMent'
 
 class NavBar extends Component {
     constructor(props) {
@@ -136,25 +135,21 @@ class Header extends Component{
                   </div>
                   <div className={`${this.state.scroll>(window.screen.height)/5? 'flash fixed-top navScreenSize': 'navBar col-10'}`}>
                     <NavBar/>
-                  </div>
-                  <Suspense fallback={<div>Loading</div>}>  
+                  </div> 
                   <div className="Appoint">
                   <Appoint/>
                   </div>
-                  </Suspense>
                   </div>    
                 </div>
                 </Media>
                 <Media query="(max-width:1289px)"> 
                    <div>
-                       <TopFixNav/>
-                    <Suspense fallback={<div>Loading</div>}>   
+                       <TopFixNav/>  
                     <div className="appointDiv"> 
                     <div className="appointExt">  
                     <Appoint/>
                     </div>
                     </div> 
-                    </Suspense> 
                     </div>  
                 </Media>
                 
