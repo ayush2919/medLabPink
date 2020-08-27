@@ -22,7 +22,7 @@ class About extends Component{
             <div className="" style={{backgroundColor:"#f1f1f1"}}>
                   <div className="row properPadding Margin">
                     <div className="col-md-4 col-12 aboutRoundImg">
-                      <img style={{borderRadius:"50%"}} src="../../../assets/images/IMG6.jpg" alt="App"/>
+                      <img style={{borderRadius:"50%"}} src="../../../assets/images/IMG6.jpg"  alt="App"/>
                     </div>
                     <div className="col-md-6 offset-md-2 col-12 Margin">
                       <h1 className="xlarge-font"><b>Our Founding</b></h1>
@@ -52,17 +52,17 @@ class About extends Component{
                        {` We are not only committed in providing best of the Diagnostic services but also passionate in developing innovative and ground-breaking tests, products and tools to enhance patient care. We have procured modern and sophisticated equipment’s and have highly experienced team of doctors and technicians, providing value to the patient.`}       
                        </ReadMoreAndLess></p>
                     </div>
-                    <div className="col-md-4 offset-md-2 col-12 Margin aboutImg">
-                        <img src="../../../assets/images/IMG1.jpg" />
+                    <div className="col-md-4 col-12 Margin aboutImg">
+                        <img src="../../../assets/images/whyConsiderUs.jpg" alt="MedLAb Image"/>
                     </div>
                   </div>
                 </div>
 
                 {/* <!-- Clarity Section --> */}
-                 <div className="Margin" style={{backgroundColor:"#f1f1f1"}}>
+                 <div className="Margin mt-4" style={{backgroundColor:"#f1f1f1"}}>
                   <div className="row properPadding">
                     <div className="col-md-4 col-12 aboutImg Margin">
-                      <img src="../../../assets/images/IMG1.jpg" alt="App" height="471px" />
+                      <img src="../../../assets/images/quality.jpg" alt="App" height="471px" />
                     </div>
                     <div className="col-md-6 offset-md-2 col-12 Margin">
                       <h1 className="xlarge-font"><b>Moto:Quality with assurance!</b></h1>
@@ -92,14 +92,14 @@ class About extends Component{
                       { "This is where we think lies an opportunity for us to emerge as one of the only healthcare providers with focus on an effective quality system. We strive to provide every patient and every customer with services and products of uncompromising quality – error free, on time, every time. We see ourselves as pioneers of modern medical laboratory services in coming future. " }  
                        </ReadMoreAndLess></p>
                     </div>
-                    <div className="Margin col-md-4 offset-md-2 col-12  aboutImg">
-                        <img src="../../../assets/images/IMG1.jpg"  height="471px" alt="App"/>
+                    <div className="Margin col-md-4 col-12  aboutImg">
+                        <img src="../../../assets/images/vision.jpg"  height="471px" alt="App"/>
                     </div>
                   </div>
                 </div>
                 <div id="team"> 
-                 <div className="header properPadding">
-                <h1 className="xlarge-font" style={{fontSize:"5vw",textAlign:"center"}} ><b>Meet Our Team</b></h1><hr/>
+                 <div className="header properPadding Margin mt-4">
+                <h1 className="xlarge-font" style={{fontSize:"35px",textAlign:"center"}} ><b>Meet Our Team</b></h1><hr/>
                 </div>
                 
                  <div className="row">

@@ -461,6 +461,10 @@ html {
  margin:10px 12%;
 }}
 /* About */
+.aboutImg img{
+  border-radius: 50px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.2);
+}
 @media only screen and (max-width: 427px) {
   .aboutImg img{
     width:100%;
@@ -472,7 +476,7 @@ html {
 }
 @media only screen and (min-width: 428px) {
   .aboutImg img{
-    width:335px;
+    width:450px;
   }
   .aboutRoundImg img{
     width:500px ;

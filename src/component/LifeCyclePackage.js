@@ -67,7 +67,7 @@ class ShowAtOnce extends Component{
                 return(
                   <div className="col-4 cardStyling mt-2" > 
                    <Link to={`/lifecycle/${item.id}`}>
-                   <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={x=x+70}>  
+                   <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={x=x+30}>  
                    <Card>   
                    <CardImg src={item.img} alt={item.name}/>
                    </Card>

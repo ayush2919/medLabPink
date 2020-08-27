@@ -125,7 +125,7 @@ toggleModal(itemId){
             </ScrollAnimation>
             </div>
             <div className="col-12 col-md-4">
-            <ScrollAnimation animateIn="zoomIn" animateOnce={true} delay={300}>   
+            <ScrollAnimation animateIn="zoomIn" animateOnce={true} delay={50}>   
             <Card className="threeD">
               <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg" height="350px"/>
               <div style={{position:"absolute",top:"0px",left:"-3px"}}>
@@ -146,7 +146,7 @@ toggleModal(itemId){
             <ScrollAnimation animateIn="zoomIn" animateOnce={true}>    
             <h2 className="text-center">HealthCare </h2><hr/>
             </ScrollAnimation>
-            <ScrollAnimation animateIn="flash" animateOnce={true} delay={200}>  
+            <ScrollAnimation animateIn="flash" animateOnce={true}>  
             <Slider {...settings}>
             <div className="ml-4 mr-4 col-10">
             <Card className="threeD">
