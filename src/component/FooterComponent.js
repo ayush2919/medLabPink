@@ -11,16 +11,16 @@ function Footer(props) {
                 <img src='../assets/images/medLogoFooter.png' alt="MEDLOGO"/>
                 </div>
                     <div className="socialMediaIcons">
-                        <a href="https://www.youtube.com/watch?v=sHLVoL1tDR0&t=223s">
+                        <a href="https://www.facebook.com/medlab.diagnostic.7">
                             <i className="fa fa-lg fa-facebook"/>
                         </a>
-                        <a href="#">
-                        <i className="fa fa-lg fa-instagram"/>
+                        <a href="medlabdiagnostic.co.in@gmail.com">
+                        <i className="fa fa-lg fa-google-plus"/>
                         </a>
-                        <a href="#">
+                        <a href="https://twitter.com/MedlabDC">
                         <i className="fa fa-lg fa-twitter"/>
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/medlab-diagnostic-4b88431b3/">
                         <i className="fa fa-lg fa-linkedin"/>
                         </a>
                    </div>
@@ -34,7 +34,7 @@ function Footer(props) {
 		              New-Delhi (110043)<br />
 		              <i className="fa fa-phone fa-lg "></i> 936941109<br />
 		              <i className="fa fa-envelope fa-lg"></i>  
-                      <a className="text-white" href ="mailto:confusion@food.net"> confusion@food.net</a>
+                      <a className="text-white" href ="mailto:medlabdiagnostic.co.in@gmail.com"> medlabdiagnostic.co.in@gmail.com</a>
                     </address>
                 </div>
                 <div className="text-white col-md-4 Margin ml-4" style={{lineHeight:"1.1",color:""}}>

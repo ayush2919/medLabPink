@@ -91,7 +91,7 @@ export default class RenderPackages extends Component{
                       </div>
                        </CardBody>
                        <CardFooter>     
-                       <span style={{color:"#2a93c9"}}>{item.Price}</span>
+                       {/* <span style={{color:"#2a93c9"}}>{item.Price}</span> */}
                       <Button id={item.id} size="sm" onClick={this.handleInfo(item.id)} outline color="info" 
                          style={{float:"right"}}>
                           Know More</Button>

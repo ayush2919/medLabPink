@@ -14,7 +14,9 @@ const mapStateToProps = state => {
         InfertilityPackages: state.infertility,
         ThyroidPackages: state.thyroid,
         DiabetesPackages: state.diabetes,
-        AllergyPackages: state.allergy
+        AllergyPackages: state.allergy,
+        AnemiaPackages:state.anemia,
+        TumourPackages:state.tumour
     }
   }
 
@@ -42,11 +44,11 @@ class SelectDisorder extends Component{
         case '3':
             return <RenderPackages cards={this.props.KidneyPackages.kidney} err={this.props.KidneyPackages.errMess} name={"Kidney Packages/Test"}/>       
         case '4':
-            return <RenderPackages cards={[]} name={"Lungs Packages/Test"}/>  
+            return <RenderPackages cards={this.props.TumourPackages.tumour} err={this.props.TumourPackages.errMess} name={"Tumour Packages/Test"}/>  
         case '5':
             return <RenderPackages cards={this.props.InfertilityPackages.infertility} err={this.props.InfertilityPackages.errMess} name={"Infertility Packages/Test"}/>
         case '6':
-            return <RenderPackages cards={[]} name={"CBC Packages/Test"}/>
+            return <RenderPackages cards={this.props.AnemiaPackages.anemia} err={this.props.AnemiaPackages.errMess} name={"Anemia Packages/Test"}/>
         case '7':
             return <RenderPackages cards={this.props.HeartPackages.heart} err={this.props.HeartPackages.errMess} name={"Heart Packages/Test"}/>
         case '8':

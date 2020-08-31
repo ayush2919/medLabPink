@@ -6,7 +6,7 @@ export const items=[
     },
     {
       "id":"2",
-      "img":"../assets/lifecycle/vitaminD.png",
+      "img":"../assets/lifecycle/diabetes.png",
       "name":"Diabetes"
     },
     {
@@ -16,8 +16,8 @@ export const items=[
     },
     {
       "id":"4",
-      "img":"../assets/lifecycle/lungs.png",
-      "name":"Lungs"
+      "img":"../assets/lifecycle/anemia.png",
+      "name":"Anemia"
     },
     {
       "id":"5",
@@ -26,8 +26,8 @@ export const items=[
     },
     {
       "id":"6",
-      "img":"../assets/lifecycle/cbc.png",
-      "name":"CBC"
+      "img":"../assets/lifecycle/tumour.png",
+      "name":"Tumour"
     },
     {
       "id":"7",

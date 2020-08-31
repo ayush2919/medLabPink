@@ -1,11 +1,21 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import HealthCarePackage from './Cdata'
+// import HealthCarePackage from './Cdata'
 import Media from "react-media";
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Card,CardImg,Button,Modal,ModalHeader,ModalBody} from 'reactstrap';
+import { withRouter } from 'react-router-dom'
+import { connect } from 'react-redux';
+import {fetchCombos} from './redux/actionCreator'
 
-export default class HealthCare extends Component {
+const mapStateToProps = state => {
+  return {
+    HealthCarePackage:state.combos
+  }
+}
+
+
+class HealthCare extends Component {
 
   constructor(props) {
     super(props);
@@ -16,6 +26,11 @@ export default class HealthCare extends Component {
    
     this.toggleModal = this.toggleModal.bind(this);
   }
+  componentDidMount() {
+    console.log("fetchesDishes");
+    // console.log("ayush");
+     fetchCombos();
+ }
 
 toggleModal(itemId){
     this.setState({
@@ -36,7 +51,8 @@ toggleModal(itemId){
     const RenderModal=()=>{
       if(this.state.isModalOpen){
         var index=this.state.itemId - 1;
-        var pack=HealthCarePackage[index];
+        console.log(this.props.HealthCarePackage.combos)
+        var pack=this.props.HealthCarePackage.combos[index];
         return(   
         <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
         <div className="text-center">
@@ -103,7 +119,7 @@ toggleModal(itemId){
             <div className="col-12 col-md-4">
             <ScrollAnimation animateIn="zoomIn" animateOnce={true} >    
             <Card className="threeD">
-              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg" height="350px"/>
+              <CardImg className="healthCareImg" src="../../assets/images/healthcare1.jpg" height="350px"/>
                <div style={{position:"absolute",top:"0px",left:"-2px"}}>
                <h4 className="healthCare tag threeD">BASIC</h4>
               </div>
@@ -115,7 +131,7 @@ toggleModal(itemId){
             <div className="col-12 col-md-4">
             <ScrollAnimation animateIn="zoomIn" animateOnce={true} delay={100}>   
             <Card className="threeD">
-              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg" height="350px"/>
+              <CardImg className="healthCareImg" src="../../assets/images/healthcare2.jpg" height="350px"/>
               <div style={{position:"absolute",top:"0px",left:"-2px"}}>
               <h4 className="healthCare tag threeD">PRIMARY</h4>
               </div>
@@ -127,7 +143,7 @@ toggleModal(itemId){
             <div className="col-12 col-md-4">
             <ScrollAnimation animateIn="zoomIn" animateOnce={true} delay={50}>   
             <Card className="threeD">
-              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg" height="350px"/>
+              <CardImg className="healthCareImg" src="../../assets/images/healthcare3.jpg" height="350px"/>
               <div style={{position:"absolute",top:"0px",left:"-3px"}}>
               <h4 className="healthCare tag threeD">COMPREHENSIVE</h4>
               </div>
@@ -150,7 +166,7 @@ toggleModal(itemId){
             <Slider {...settings}>
             <div className="ml-4 mr-4 col-10">
             <Card className="threeD">
-              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg" height="250px"/>
+              <CardImg className="healthCareImg" src="../../assets/images/healthcare1.jpg" height="250px"/>
               <div style={{position:"absolute",top:"0px",left:"-2px"}}>
               <h4 className="healthCare tag threeD">BASIC</h4>
               </div>
@@ -160,7 +176,7 @@ toggleModal(itemId){
             </div>
             <div className="ml-4 mr-4 col-10">
             <Card className="threeD">
-              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg" height="250px"/>
+              <CardImg className="healthCareImg" src="../../assets/images/healthcare2.jpg" height="250px"/>
               <div style={{position:"absolute",top:"0px",left:"-2px"}}>
               <h4 className="healthCare tag threeD">PRIMARY</h4>
               </div>
@@ -170,7 +186,7 @@ toggleModal(itemId){
             </div>
             <div className="ml-4 mr-4 col-10">
             <Card className="threeD">
-              <CardImg className="healthCareImg" src="../../assets/images/healthcare.jpg" height="250px"/>
+              <CardImg className="healthCareImg" src="../../assets/images/healthcare3.jpg" height="250px"/>
               <div style={{position:"absolute",top:"0px",left:"-3px"}}>
               <h4 className="healthCare tag threeD">COMPREHENSIVE</h4>
               </div>
@@ -187,3 +203,5 @@ toggleModal(itemId){
     );
   }
 }
+
+export default withRouter(connect(mapStateToProps,fetchCombos)(HealthCare))

@@ -500,10 +500,7 @@ html {
 .fa-twitter{
   color:#0097e6 ;
 }
-.fa-instagram{
-  color: #e84393;
-}
-.fa-map-marker{
+.fa-map-marker,.fa-google-plus{
   color: #c4302b;
 }
 

@@ -10,6 +10,8 @@ import { Images } from './LifeCycle/Img';
 import { Combos } from './ComboPackages';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
+import { Anemia } from './LifeCycle/Anemia';
+import { Tumour } from './LifeCycle/Tumour';
 
 
 export const ConfigureStore = () => {
@@ -22,6 +24,8 @@ export const ConfigureStore = () => {
             diabetes:Diabetes,
             kidney:Kidney,
             allergy:Allergy,
+            anemia:Anemia,
+            tumour:Tumour,
             images:Images,
             combos:Combos
         }),

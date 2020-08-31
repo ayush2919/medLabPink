@@ -29,13 +29,15 @@ export const fetchLifeCycle = () => (dispatch) => {
      var diabetes=pack.selectPackage.filter(fetchPackage=>fetchPackage.name==="Diabetes")[0]
      var infertility=pack.selectPackage.filter(fetchPackage=>fetchPackage.name==="Infertility")[0]
      var thyroid=pack.selectPackage.filter(fetchPackage=>fetchPackage.name==="Thyroid")[0]
+     var tumour=pack.selectPackage.filter(fetchPackage=>fetchPackage.name==="Tumour")[0]
+     var anemia=pack.selectPackage.filter(fetchPackage=>fetchPackage.name==="Anemia")[0]
      dispatch(addLifeCycle(heart.packages,liver.packages,allergy.packages,kidney.packages,
-      diabetes.packages,infertility.packages,thyroid.packages))
+      diabetes.packages,infertility.packages,thyroid.packages,tumour.packages,anemia.packages))
     }))
     .catch(error => dispatch(lifeCycleFailed(error.message)));
 }
 
-export const addLifeCycle =(heart ,liver,allergy,kidney,diabetes,infertility,thyroid)=>({
+export const addLifeCycle =(heart ,liver,allergy,kidney,diabetes,infertility,thyroid,tumour,anemia)=>({
   type:ActionTypes.ADD_PACKAGES,
   payload:
     {
@@ -45,7 +47,9 @@ export const addLifeCycle =(heart ,liver,allergy,kidney,diabetes,infertility,thy
       kidneyPackages      :  kidney,
       diabetesPackages    : diabetes,
       infertilityPackages : infertility,
-      thyroidPackages     : thyroid
+      thyroidPackages     : thyroid,
+      anemiaPackages      : anemia,
+      tumourPackages      : tumour
     }
   })
 export const lifeCycleFailed = (errmess) => ({
@@ -100,16 +104,16 @@ export const fetchCombos = () => (dispatch) => {
           throw errmess;
     })
   .then(response => response.json())
-  // .then(comboPackages => dispatch(addcombos(comboPackages)))
-  .then(combos => dispatch(console.log(combos)))
+  .then(comboPackages => dispatch(addcombos(comboPackages[0].comboPackage)))
+  // .then(combos => dispatch(console.log(combos[0].comboPackage)))
   .catch(error => dispatch(combosFailed(error.message)));
 };
 
 export const addcombos=(combos)=>({
-  type:ActionTypes.ADD_IMG,
+  type:ActionTypes.ADD_COMBOS,
   payload:combos
 })
 export const combosFailed=(errmess)=>({
-  type:ActionTypes.IMG_FAILED,
+  type:ActionTypes.COMBOS_FAILED,
   payload:errmess
 })

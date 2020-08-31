@@ -21,7 +21,7 @@ class About extends Component{
             <div className="" style={{backgroundColor:"#f1f1f1"}}>
                   <div className="row properPadding Margin">
                     <div className="col-md-4 col-12 aboutRoundImg">
-                      <img style={{borderRadius:"50%"}} src="../../../assets/images/IMG6.jpg"  alt="App"/>
+                      <img style={{borderRadius:"50%"}} src="../../../assets/images/founder.jpg"  alt="Dr. Manish"/>
                     </div>
                     <div className="col-md-6 offset-md-2 col-12 Margin">
                       <h1 className="xlarge-font"><b>Our Founding</b></h1>
@@ -102,51 +102,22 @@ class About extends Component{
                 </div>
                 
                  <div className="row">
-                 <div className="col-md-3 col-12">
+                 <div className="col-md-5 offset-md-1 col-12">
                     <Card>
                       <CardBody>
-                      <CardImg src="../../../assets/images/IMG3.jpg" alt="Jane"/>
-                      <CardTitle><strong>Jane Doe</strong></CardTitle>
-                      <CardText><small>CEO &amp; Founder
-                      Some text that describes me lorem ipsum ipsum lorem.<br/>
-                          example@example.com</small>
-                      </CardText>
+                      <CardImg src="../../../assets/images/founder.jpg" alt="Dr. Manish" height="350px"/>
+                      <CardTitle className="mt-3" style={{lineHeight:"1.105em"}}><strong>Dr. Manish</strong><br/>
+                      <small>Senior Biochemist<br/>MBBS, MD
+                      </small></CardTitle>
                       </CardBody>
                      </Card> 
                   </div>
-                  <div className="col-md-3 col-12">
+                  <div className="col-md-5 col-12">
                     <Card>
                       <CardBody>
-                      <CardImg src="../../../assets/images/IMG3.jpg" alt="Jane"/>
-                      <CardTitle><strong>Jane Doe</strong></CardTitle>
-                      <CardText><small>CEO &amp; Founder
-                      Some text that describes me lorem ipsum ipsum lorem.<br/>
-                          example@example.com</small>
-                      </CardText>
-                      </CardBody>
-                     </Card> 
-                  </div>
-                  <div className="col-md-3 col-12">
-                    <Card>
-                      <CardBody>
-                      <CardImg src="../../../assets/images/IMG3.jpg" alt="Jane"/>
-                      <CardTitle><strong>Jane Doe</strong></CardTitle>
-                      <CardText><small>CEO &amp; Founder
-                      Some text that describes me lorem ipsum ipsum lorem.<br/>
-                          example@example.com</small>
-                      </CardText>
-                      </CardBody>
-                     </Card> 
-                  </div>
-                  <div className="col-md-3 col-12">
-                    <Card>
-                      <CardBody>
-                      <CardImg src="../../../assets/images/IMG3.jpg" alt="Jane"/>
-                      <CardTitle><strong>Jane Doe</strong></CardTitle>
-                      <CardText><small>CEO &amp; Founder
-                      Some text that describes me lorem ipsum ipsum lorem.<br/>
-                          example@example.com</small>
-                      </CardText>
+                      <CardImg src="../../../assets/images/qualityManger.jpg" alt="Jane" height="350px"/>
+                      <CardTitle className="mt-3"><strong>Bharati Mohan</strong>
+                      <small><br/>Quality Manager & Owner</small></CardTitle>
                       </CardBody>
                      </Card> 
                   </div>
