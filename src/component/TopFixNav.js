@@ -13,7 +13,7 @@ class TopFixNav extends Component {
             position:'absolute',
             right:'25px',
             top:'45px',
-            backgroundColor:'#2a93c9',
+            backgroundColor:'#db7093',
             display:'none',
             boxShadow: '0 8px 16px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.4)'
         }        
@@ -53,7 +53,7 @@ class TopFixNav extends Component {
                 </div>
                 <Media query='(min-width:315px)'>
                   <div className="topNavLogo">
-                  <img src="../assets/images/medLogoFooter.png" alt="MedLab" width="120px" height="50px"/>
+                  <img src="../assets/images/medLogoFooter.png" alt="MedLab" width="110px" height="40px"/>
                   </div>
                 </Media>
                 <div className="actBtn" onClick={()=>this.handleDiv(this.state)}> 

@@ -116,23 +116,23 @@ class Header extends Component{
                   <div className="medlabPhone">
                   <i className="fa fa-phone fa-2x mt-3" aria-hidden="true"></i>
                   </div>
-                  <div className="medlabPhoneNo"> 
-                  <a href="tel:+919369641109" className="text-white"> +91-936-964-1109</a><br/>
-                  <a href="tel:+919161157505" className="text-white"> +91-916-115-7505</a>
-                  </div>
+                  {/* <div className="medlabPhoneNo"> 
+                  <a href="tel:+919369641109"> +91-936-964-1109</a><br/>
+                  <a href="tel:+919161157505"> +91-916-115-7505</a>
+                  </div> */}
                   <div className="medlabMap ">
                   <a href="https://goo.gl/maps/LcwPZhpLMPhGnBiY6">
                         <i className="fa fa-2x fa-map-marker mt-3"/>
                       </a>
                   </div>
-                  <div className="medlabAdd">
+                  <div className="medlabAdd" >
                   <a href="https://goo.gl/maps/LcwPZhpLMPhGnBiY6">    
-                  <span className="text-white">RZ/D-49,Nangli Vihar<br/>New Delhi</span></a>
+                  <span style={{color:"#ef5455"}}><b>RZ/D-49,Nangli Vihar<br/>New Delhi</b></span></a>
                   </div>    
-                  <div className="medlabPhoneNo"> 
-                  <a href="tel:+919369641109" className="text-white"> +91-936-964-1109</a><br/>
-                  <a href="tel:+919161157505" className="text-white"> +91-916-115-7505</a>
-                  </div>
+                  <div className="medlabPhoneNo"><b>
+                  <a href="tel:+919369641109" style={{color:"#ef5455"}}> +91-936-964-1109</a><br/>
+                  <a href="tel:+919161157505" style={{color:"#ef5455"}}> +91-916-115-7505</a>
+                  </b></div>
                   <div className={`${this.state.scroll>(window.screen.height)/5? 'flash fixed-top navScreenSize': 'navBar col-10'}`}>
                     <NavBar/>
                   </div> 

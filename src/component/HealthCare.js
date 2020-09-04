@@ -55,31 +55,31 @@ toggleModal(itemId){
         var pack=this.props.HealthCarePackage.combos[index];
         return(   
         <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-        <div className="text-center">
-        <ModalHeader toggle={this.toggleModal}>Details</ModalHeader>
+        <div className="text-center" style={{background:"#ffb6c1"}}>
+        <ModalHeader toggle={this.toggleModal}><b>HealthCare Details</b></ModalHeader>
           <ModalBody>
-          <h4 style={{color:"#2295bc"}}>{pack.name}</h4>
+          <h1 style={{color:"#2295bc"}}><b>{pack.name}</b></h1>
           <div className="row">
-           <div className="col-6"> 
-          <h5 style={{color:"red"}}>Title</h5>
-          <p className="small">{pack.title}</p>  
+           <div className="col-6 mt-4"> 
+          <h3 style={{color:"red"}}>Title</h3>
+          <h5>{pack.title}</h5>  
           </div>
-          <div className="col-6">
-          <h5 style={{color:"red"}}>Prerequisite</h5>
-          <p className="small">{pack.Prerequisite}</p>
+          <div className="col-6 mt-4">
+          <h3 style={{color:"red"}}>Prerequisite</h3>
+          <h5>{pack.Prerequisite}</h5>
           </div> 
           </div>  
           <div className="row">
-          <div className="col-6">
-            <h5 style={{color:"red"}}>Report Availability</h5>
-              <p className="small">{pack.ReportAvailability}</p>
+          <div className="col-6 mt-4">
+            <h3 style={{color:"red"}}>Report Availability</h3>
+              <h5>{pack.ReportAvailability}</h5>
               </div> 
-          <div className="col-6">
-              <h5 style={{color:"red"}}>UsefulFor</h5>
-              <p className="small">{pack.UsefulFor}</p>
+          <div className="col-6 mt-4">
+              <h3 style={{color:"red"}}>UsefulFor</h3>
+              <h5>{pack.UsefulFor}</h5>
             </div>
           </div>  
-          <h5 style={{color:"red"}}>Product Constituent</h5>
+          <h3 style={{color:"red"}} className="mt-4">Product Constituent</h3>
           <table className="table table-dark table-hover table-sm col-12">
           <thead>
             <tr>
@@ -110,9 +110,9 @@ toggleModal(itemId){
     return (
      <>
        <Media query="(min-width:768px)">
-             <div className="container">
+             <div className="container properPadding">
           <ScrollAnimation animateIn="zoomIn" animateOnce={true}>    
-            <h2 className="mt-5 text-center">HealthCare Packages</h2><hr/>
+            <h1 className="text-center">HealthCare Packages</h1><hr/>
           </ScrollAnimation>  
           {/* <ScrollAnimation animateIn="zoomIn" animateOnce={true} delay={1000}>  */}
             <div className="row mt-5">
@@ -123,7 +123,7 @@ toggleModal(itemId){
                <div style={{position:"absolute",top:"0px",left:"-2px"}}>
                <h4 className="healthCare tag threeD">BASIC</h4>
               </div>
-              <Button className="threeD " size="lg" color="info" onClick={()=>this.toggleModal(1)}> 
+              <Button className="threeD " size="lg" style={{backgroundColor:"#ff69b4"}} onClick={()=>this.toggleModal(1)}> 
               Know More</Button>
             </Card>
             </ScrollAnimation>
@@ -135,7 +135,7 @@ toggleModal(itemId){
               <div style={{position:"absolute",top:"0px",left:"-2px"}}>
               <h4 className="healthCare tag threeD">PRIMARY</h4>
               </div>
-              <Button className="threeD " size="lg" color="info" onClick={()=>this.toggleModal(2)}> 
+              <Button className="threeD " size="lg" style={{backgroundColor:"#ff69b4"}} onClick={()=>this.toggleModal(2)}> 
               Know More</Button>
             </Card>
             </ScrollAnimation>
@@ -147,7 +147,7 @@ toggleModal(itemId){
               <div style={{position:"absolute",top:"0px",left:"-3px"}}>
               <h4 className="healthCare tag threeD">COMPREHENSIVE</h4>
               </div>
-              <Button className="threeD " size="lg" color="info" onClick={()=>this.toggleModal(3)}> 
+              <Button className="threeD " size="lg" style={{backgroundColor:"#ff69b4"}} onClick={()=>this.toggleModal(3)}> 
               Know More</Button>
             </Card>
             </ScrollAnimation>
@@ -160,7 +160,7 @@ toggleModal(itemId){
        <Media query="(max-width:767px)">
             <div className="container">
             <ScrollAnimation animateIn="zoomIn" animateOnce={true}>    
-            <h2 className="text-center">HealthCare </h2><hr/>
+            <h1 className="text-center">HealthCare </h1><hr/>
             </ScrollAnimation>
             <ScrollAnimation animateIn="flash" animateOnce={true}>  
             <Slider {...settings}>
@@ -170,7 +170,7 @@ toggleModal(itemId){
               <div style={{position:"absolute",top:"0px",left:"-2px"}}>
               <h4 className="healthCare tag threeD">BASIC</h4>
               </div>
-              <Button className="threeD" size="lg" color="info" onClick={()=>this.toggleModal(1)}> 
+              <Button className="threeD" size="lg" style={{backgroundColor:"#ff69b4"}} onClick={()=>this.toggleModal(1)}> 
               Know More</Button>
             </Card>
             </div>
@@ -180,7 +180,7 @@ toggleModal(itemId){
               <div style={{position:"absolute",top:"0px",left:"-2px"}}>
               <h4 className="healthCare tag threeD">PRIMARY</h4>
               </div>
-              <Button className="threeD" size="lg" color="info" onClick={()=>this.toggleModal(2)}> 
+              <Button className="threeD" size="lg" style={{backgroundColor:"#ff69b4"}} onClick={()=>this.toggleModal(2)}> 
               Know More</Button>
             </Card>
             </div>
@@ -190,7 +190,7 @@ toggleModal(itemId){
               <div style={{position:"absolute",top:"0px",left:"-3px"}}>
               <h4 className="healthCare tag threeD">COMPREHENSIVE</h4>
               </div>
-              <Button className="threeD" size="lg" color="info" onClick={()=>this.toggleModal(3)}> 
+              <Button className="threeD" size="lg" style={{backgroundColor:"#ff69b4"}} onClick={()=>this.toggleModal(3)}> 
               Know More</Button>
             </Card>
             </div>

@@ -24,10 +24,10 @@ class Slick extends Component{
       autoplay: true,
       speed: 3000,
       slidesToShow: 5,
-      slidesToScroll: 2
+      slidesToScroll: 1
     };
     return (
-      <div className="container" style={{paddingTop:"80px"}}>
+      <div className="container" style={{paddingTop:"150px"}}>
         <ScrollAnimation animateIn="zoomIn" animateOnce={true}> 
         <h1 className="text-center mt-1">LifeCycle Disorder</h1><hr/>
         </ScrollAnimation>
@@ -39,7 +39,7 @@ class Slick extends Component{
              return( 
               <div className="cardStyling m-3">
               <Link to={`/lifecycle/${item.id}`}>
-              <img src={item.img} alt={item.name} width="141px" height="120px"/>
+              <img src={item.img} alt={item.name}/>
              </Link>
             </div>
              )})   
@@ -59,7 +59,7 @@ class ShowAtOnce extends Component{
       <>
        <div className="container mt-5">
        <ScrollAnimation animateIn="zoomIn" animateOnce={true}>
-       <h2 className="text-center mt-1">LifeCycle</h2><hr/>
+       <h1 className="text-center mt-1">LifeCycle</h1><hr/>
        </ScrollAnimation>
          <div className="row">
             {
@@ -96,7 +96,9 @@ class LifeCylce extends Component {
    <div className="lifeCycleDiv">
     <div id="lifecycle">  
     <Media query="(min-width:768px)">
+     <div style={{paddingBottom:"80px"}}> 
     <Slick/>
+     </div>
    </Media>
    <Media query="(max-width:767px)">
    <ShowAtOnce/>

@@ -46,21 +46,21 @@ export default class RenderPackages extends Component{
           if(this.state.obj!=null){    
           return(  
           <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-          <div className="text-center">
-          <ModalHeader toggle={this.toggleModal}>Details</ModalHeader>
+          <div className="text-center" style={{background:"#ffb6c1"}}>
+          <ModalHeader toggle={this.toggleModal}><b>LifeCycle Details</b></ModalHeader>
             <ModalBody>
-            <h6 style={{color:"red"}}>Title</h6>
-            <p className="small">{this.state.obj.title}</p>  
-            <h6 style={{color:"red"}}>Category</h6>
-            <p className="small">{this.state.obj.Category}</p>
-            <h6 style={{color:"red"}}>Prerequisite</h6>
-            <p className="small">{this.state.obj.Prerequisite}</p>
-            <h6 style={{color:"red"}}>Report Availability</h6>
-            <p className="small">{this.state.obj.ReportAvailability}</p>
-            <h6 style={{color:"red"}}>UsefulFor</h6>
-            <p className="small">{this.state.obj.UsefulFor}</p>
-            <h6 style={{color:"red"}}>SampleRequired</h6>
-            <p className="small">{this.state.obj.SampleRequired}</p>
+            <h3 className="mt-3" style={{color:"red"}}>Title</h3>
+            <h5>{this.state.obj.title}</h5>  
+            <h3 className="mt-3" style={{color:"red"}}>Category</h3>
+            <h5>{this.state.obj.Category}</h5>
+            <h3 className="mt-3" style={{color:"red"}}>Prerequisite</h3>
+            <h5>{this.state.obj.Prerequisite}</h5>
+            <h3 className="mt-3" style={{color:"red"}}>Report Availability</h3>
+            <h5>{this.state.obj.ReportAvailability}</h5>
+            <h3 className="mt-3" style={{color:"red"}}>UsefulFor</h3>
+            <h5>{this.state.obj.UsefulFor}</h5>
+            <h3 className="mt-3" style={{color:"red"}}>SampleRequired</h3>
+            <h5>{this.state.obj.SampleRequired}</h5>
             </ModalBody>   
           </div>    
         </Modal> 

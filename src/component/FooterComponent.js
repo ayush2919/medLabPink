@@ -10,7 +10,7 @@ function Footer(props) {
               <div className="text-white medLogoFooter">
                 <img src='../assets/images/medLogoFooter.png' alt="MEDLOGO"/>
                 </div>
-                    <div className="socialMediaIcons">
+                    <div className="socialMediaIcons mt-3">
                         <a href="https://www.facebook.com/medlab.diagnostic.7">
                             <i className="fa fa-lg fa-facebook"/>
                         </a>
@@ -26,7 +26,7 @@ function Footer(props) {
                    </div>
               </div>   
               <div className="col-12 col-md-4 text-white Margin ml-4">
-                    <h5>Our Address</h5>
+                    <h5><b>Our Address</b></h5>
                     <hr color="white"/>
                     <address>
 		              RZ/D-49, Nangli Vihar Extn. Part-1<br />
@@ -34,11 +34,11 @@ function Footer(props) {
 		              New-Delhi (110043)<br />
 		              <i className="fa fa-phone fa-lg "></i> 936941109<br />
 		              <i className="fa fa-envelope fa-lg"></i>  
-                      <a className="text-white" href ="mailto:medlabdiagnostic.co.in@gmail.com"> medlabdiagnostic.co.in@gmail.com</a>
+                      <a href ="mailto:medlabdiagnostic.co.in@gmail.com"> medlabdiagnostic.co.in@gmail.com</a>
                     </address>
                 </div>
                 <div className="text-white col-md-4 Margin ml-4" style={{lineHeight:"1.1",color:""}}>
-                   <h5>News Letter</h5><hr color="white"/> 
+                   <h5><b>News Letter</b></h5><hr color="white"/> 
                    <small >Enter your email address to receive up-to-date news,
                         new patient information and other useful stuff, delivered right to your inbox.</small>
                    

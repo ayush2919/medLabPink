@@ -7,9 +7,9 @@ return(
     //  <div className="container" style={{paddingTop:"500px"}}>
      <div className="container mt-5">
        <ScrollAnimation animateIn="zoomIn" animateOnce={true}>
-      <h3 className="text-center properPadding">What Makes us Different</h3><hr/>  
+      <h1 className="text-center properPadding">What Makes us Different</h1><hr/>  
       </ScrollAnimation>
-     <div className="row mt-3" style={{display:"flex"}}>
+     <div className="row mt-3" style={{padding:''}}>
         <div className="col-md-4 col-12">
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={300}>
           <Card className="threeD" style={{padding:"50px 0px",borderRadius:"20px"}}>
