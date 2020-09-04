@@ -46,7 +46,7 @@ export default class RenderPackages extends Component{
           if(this.state.obj!=null){    
           return(  
           <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-          <div className="text-center" style={{background:"#ffb6c1"}}>
+          <div className="text-center" style={{background:"#F8e5e5"}}>
           <ModalHeader toggle={this.toggleModal}><b>LifeCycle Details</b></ModalHeader>
             <ModalBody>
             <h3 className="mt-3" style={{color:"red"}}>Title</h3>

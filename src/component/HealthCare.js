@@ -28,7 +28,6 @@ class HealthCare extends Component {
   }
   componentDidMount() {
     console.log("fetchesDishes");
-    // console.log("ayush");
      fetchCombos();
  }
 
@@ -55,7 +54,7 @@ toggleModal(itemId){
         var pack=this.props.HealthCarePackage.combos[index];
         return(   
         <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-        <div className="text-center" style={{background:"#ffb6c1"}}>
+        <div className="text-center" style={{background:"#F8e5e5"}}>
         <ModalHeader toggle={this.toggleModal}><b>HealthCare Details</b></ModalHeader>
           <ModalBody>
           <h1 style={{color:"#2295bc"}}><b>{pack.name}</b></h1>
